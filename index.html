@@ -1,0 +1,2035 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vivah Biodata Maker — Free Indian Marriage Biodata | 6 Templates | No Signup</title>
+<meta name="description" content="India's most beautiful free marriage biodata maker. 6 stunning templates, religious invocations (ॐ Ganesh, Bismillah, Cross, Waheguru), photo crop, gotra, rashi, nakshatra. No signup. PDF in 1 click.">
+<meta name="keywords" content="free marriage biodata maker India, shaadi biodata format, vivah biodata, Indian matrimonial biodata, free biodata PDF, Hindi biodata maker, shree ganeshay namah biodata, Hindu biodata template, Muslim nikah biodata, biodata with photo, gotra rashi nakshatra biodata, best biodata maker India 2025">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://vivahbiodata.in/">
+<meta property="og:title" content="Vivah Biodata — Free Indian Marriage Biodata Maker | 6 Templates">
+<meta property="og:description" content="6 stunning templates. Religious invocations. Photo crop. Gotra, Rashi, Nakshatra. No signup. Download PDF instantly. India's best free biodata maker.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://vivahbiodata.in/">
+<meta property="og:image" content="https://vivahbiodata.in/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Vivah Biodata — Free Indian Marriage Biodata Maker">
+<meta name="twitter:description" content="6 templates. Religious blessings. Photo crop. Gotra, Rashi. No signup. Free PDF.">
+<meta name="theme-color" content="#7C1F1F">
+
+<!-- Schema.org WebApplication -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Vivah Biodata Maker","url":"https://vivahbiodata.in","description":"Free Indian marriage biodata maker with 6 professional templates, religious invocations, photo crop, and instant PDF download. No signup required.","applicationCategory":"LifestyleApplication","operatingSystem":"Web Browser","offers":{"@type":"Offer","price":"0","priceCurrency":"INR","availability":"https://schema.org/InStock"},"featureList":["6 Premium Templates","Religious Invocations","Photo Crop Tool","PDF Download","Hindi & English","No Signup Required","Gotra Rashi Nakshatra"],"inLanguage":["en","hi"],"isAccessibleForFree":true}
+</script>
+<!-- Schema.org FAQPage -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is VivahBiodata completely free?","acceptedAnswer":{"@type":"Answer","text":"Yes, 100% free forever. No hidden fees, no premium plans, no signup needed."}},{"@type":"Question","name":"Does my data get stored on any server?","acceptedAnswer":{"@type":"Answer","text":"Absolutely not. Everything runs in your browser. Your form data, photo, and generated biodata never leave your device."}},{"@type":"Question","name":"Can I add 'Shree Ganeshay Namah' or other religious invocations?","acceptedAnswer":{"@type":"Answer","text":"Yes! VivahBiodata supports religion-specific invocations for Hindu (ॐ श्री गणेशाय नमः, Om Namah Shivaya, etc.), Muslim (Bismillah), Christian, Sikh (Waheguru), Jain, and custom text."}},{"@type":"Question","name":"Can I add my photo to the biodata?","acceptedAnswer":{"@type":"Answer","text":"Yes. You can upload a photo and use our built-in circular crop tool to perfectly frame your picture. The photo is never uploaded to any server."}},{"@type":"Question","name":"How many templates are available?","acceptedAnswer":{"@type":"Answer","text":"There are 6 beautifully designed templates: Marigold Classic, Navy Professional, Rose Floral, Saffron Royal, Peacock Emerald, and Midnight Luxe."}},{"@type":"Question","name":"Can I download the biodata as a PDF?","acceptedAnswer":{"@type":"Answer","text":"Yes. Click 'Download PDF' and get a high-quality A4 PDF instantly — no watermarks, no restrictions."}},{"@type":"Question","name":"Is this suitable for all religions?","acceptedAnswer":{"@type":"Answer","text":"Yes. The form adapts based on your religion. Hindus get Gotra, Rashi, Nakshatra, Manglik fields. Muslims get relevant fields. All religions have their own invocation options."}}]}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Poppins:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<style>
+/* ============================================================ ROOT ============================================================ */
+:root{
+  --m:#7C1F1F;--m2:#5A1515;--m3:#9E3A3A;
+  --g:#C9940C;--g2:#E8B84B;--g3:#F5E6B0;--g4:#FDF5D5;
+  --cr:#FDF8F0;--cr2:#F5EDD8;--cr3:#EDE0C8;
+  --ch:#2C2420;--ch2:#5A4E4A;--ch3:#8C827A;
+  --gl:#E8E0D5;--wh:#FFFFFF;
+  --nav:#1A2744;--saf:#C15B12;--pea:#1A5C4A;--mid:#0D0D1A;
+  --ff:'Cormorant Garamond',Georgia,serif;
+  --fp:'Playfair Display',Georgia,serif;
+  --fd2:'DM Serif Display',Georgia,serif;
+  --fu:'Poppins',sans-serif;
+  --fd:'Noto Sans Devanagari',sans-serif;
+  --sh1:0 2px 8px rgba(44,36,32,.08);
+  --sh2:0 4px 20px rgba(44,36,32,.12);
+  --sh3:0 8px 40px rgba(44,36,32,.18);
+  --sh4:0 20px 60px rgba(44,36,32,.24);
+  --r:12px;--r2:20px;
+  --tr:all .3s cubic-bezier(.4,0,.2,1);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--fu);background:var(--cr);color:var(--ch);line-height:1.6;overflow-x:hidden}
+
+/* ============================================================ NAV ============================================================ */
+.nav{position:sticky;top:0;z-index:300;background:rgba(253,248,240,.95);backdrop-filter:blur(20px);border-bottom:1px solid var(--gl);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:62px;gap:1rem}
+.nav-brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.nav-logo-svg{width:36px;height:36px;flex-shrink:0}
+.brand-name{font-family:var(--ff);font-size:1.5rem;font-weight:700;color:var(--m);letter-spacing:-.02em}
+.brand-name span{color:var(--g)}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{font-size:.83rem;font-weight:500;color:var(--ch2);text-decoration:none;transition:var(--tr)}
+.nav-links a:hover{color:var(--m)}
+.nav-right{display:flex;align-items:center;gap:12px}
+.lang-toggle{display:flex;background:var(--gl);border-radius:100px;padding:3px}
+.lang-btn{padding:4px 14px;border:none;background:none;border-radius:100px;font-size:.78rem;font-weight:600;cursor:pointer;transition:var(--tr);font-family:var(--fu);color:var(--ch2)}
+.lang-btn.active{background:var(--wh);color:var(--m);box-shadow:var(--sh1)}
+
+/* ============================================================ HERO ============================================================ */
+.hero{position:relative;overflow:hidden;padding:5.5rem 2rem 5rem;text-align:center;background:linear-gradient(160deg,#FDF8F0 0%,#F9EDD5 50%,#FDF8F0 100%)}
+.hero-mandala{position:absolute;width:580px;height:580px;right:-130px;top:-130px;opacity:.055;pointer-events:none}
+.hero-mandala2{position:absolute;width:320px;height:320px;left:-90px;bottom:-90px;opacity:.045;pointer-events:none}
+.hero-badge{display:inline-flex;align-items:center;gap:6px;padding:6px 20px;background:var(--g3);border:1px solid rgba(201,148,12,.35);border-radius:100px;font-size:.73rem;font-weight:700;color:var(--m2);margin-bottom:1.6rem;letter-spacing:.1em;text-transform:uppercase}
+.hero h1{font-family:var(--ff);font-size:clamp(2.8rem,5.5vw,4.4rem);font-weight:700;color:var(--ch);line-height:1.1;margin-bottom:1.2rem;letter-spacing:-.025em}
+.hero h1 em{font-style:italic;color:var(--m)}
+.hero-sub{font-size:1.05rem;color:var(--ch2);max-width:560px;margin:0 auto 2.4rem;font-weight:300;line-height:1.8}
+.hero-chips{display:flex;justify-content:center;flex-wrap:wrap;gap:9px;margin-bottom:2.6rem}
+.chip{display:flex;align-items:center;gap:7px;padding:8px 18px;border-radius:100px;background:var(--wh);border:1px solid var(--gl);font-size:.8rem;color:var(--ch2);box-shadow:var(--sh1);white-space:nowrap}
+.chip svg{color:var(--g);flex-shrink:0}
+.hero-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.btn-primary{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;background:var(--m);color:var(--wh);text-decoration:none;border-radius:100px;font-size:.95rem;font-weight:600;transition:var(--tr);box-shadow:0 4px 24px rgba(124,31,31,.38);border:none;cursor:pointer;font-family:var(--fu)}
+.btn-primary:hover{background:var(--m2);transform:translateY(-2px);box-shadow:0 8px 32px rgba(124,31,31,.48)}
+.btn-secondary{display:inline-flex;align-items:center;gap:8px;padding:13px 28px;background:transparent;color:var(--m);text-decoration:none;border-radius:100px;font-size:.95rem;font-weight:600;transition:var(--tr);border:1.5px solid var(--m)}
+.btn-secondary:hover{background:var(--m);color:var(--wh)}
+
+/* ============================================================ STATS ============================================================ */
+.stats{display:flex;justify-content:center;background:var(--m);padding:1.2rem 2rem;flex-wrap:wrap;gap:0}
+.stat{display:flex;flex-direction:column;align-items:center;padding:.8rem 2.2rem;border-right:1px solid rgba(255,255,255,.15)}
+.stat:last-child{border-right:none}
+.stat-n{font-family:var(--ff);font-size:2rem;font-weight:700;color:var(--g2);line-height:1}
+.stat-l{font-size:.7rem;color:rgba(255,255,255,.65);text-transform:uppercase;letter-spacing:.12em;margin-top:2px}
+
+/* ============================================================ SECTION SHARED ============================================================ */
+.section{padding:4.5rem 2rem}
+.section-inner{max-width:1280px;margin:0 auto}
+.sec-kicker{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.16em;color:var(--g);margin-bottom:.5rem}
+.sec-title{font-family:var(--ff);font-size:clamp(1.9rem,3.2vw,2.9rem);font-weight:700;color:var(--ch);line-height:1.12;letter-spacing:-.02em}
+.sec-title em{font-style:italic;color:var(--m)}
+.sec-sub{font-size:.95rem;color:var(--ch2);margin-top:.6rem;font-weight:300}
+
+/* ============================================================ TEMPLATE SHOWCASE ============================================================ */
+.templates-showcase{text-align:center;margin-bottom:3rem}
+.tpl-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2.5rem}
+.tpl-card{border:2px solid var(--gl);border-radius:var(--r2);overflow:hidden;cursor:pointer;transition:var(--tr);background:var(--wh)}
+.tpl-card:hover{border-color:var(--g);box-shadow:0 14px 44px rgba(201,148,12,.22);transform:translateY(-6px)}
+.tpl-card.active{border-color:var(--m);box-shadow:0 14px 44px rgba(124,31,31,.18);transform:translateY(-6px)}
+.tpl-thumb{height:148px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.tpl-mini{width:88px;height:120px;border-radius:4px;box-shadow:0 4px 20px rgba(0,0,0,.2);overflow:hidden;font-size:4px;line-height:1.2}
+.tpl-mini-header{height:26px;display:flex;align-items:center;justify-content:center;font-size:5.5px;font-weight:700;color:rgba(255,255,255,.88);padding:0 5px;text-align:center}
+.tpl-mini-body{padding:4px 3px}
+.tpl-mini-field{display:flex;gap:2px;margin-bottom:1.5px}
+.tpl-mini-label{width:20px;height:2px;border-radius:1px;background:rgba(0,0,0,.22)}
+.tpl-mini-val{flex:1;height:2px;border-radius:1px;background:rgba(0,0,0,.12)}
+.tpl-mini-hr{height:1px;background:rgba(0,0,0,.1);margin:3px 0 2px}
+.tpl-card-info{padding:1rem 1.2rem;border-top:1px solid var(--gl);text-align:left}
+.tpl-card-name{font-weight:600;font-size:.88rem;color:var(--ch);margin-bottom:2px}
+.tpl-card-desc{font-size:.76rem;color:var(--ch3);line-height:1.5}
+.tpl-badge{position:absolute;top:10px;right:10px;font-size:.62rem;font-weight:700;padding:3px 9px;border-radius:100px;letter-spacing:.06em}
+.tpl-badge.new{background:#ECFDF5;color:#059669;border:1px solid rgba(5,150,105,.3)}
+
+/* ============================================================ BUILDER ============================================================ */
+#builder{padding:3rem 2rem 6rem;max-width:1340px;margin:0 auto}
+.builder-header{text-align:center;margin-bottom:3rem}
+.builder-layout{display:grid;grid-template-columns:1fr 480px;gap:3rem;align-items:start}
+
+/* ============================================================ FORM PANEL ============================================================ */
+.form-section{background:var(--wh);border-radius:var(--r2);box-shadow:var(--sh1);border:1px solid var(--gl);margin-bottom:1.2rem;overflow:hidden}
+.fsh{padding:1.1rem 1.6rem;cursor:pointer;display:flex;align-items:center;justify-content:space-between;transition:var(--tr);user-select:none;gap:1rem}
+.fsh:hover{background:var(--cr)}
+.fsh-left{display:flex;align-items:center;gap:12px;flex:1;min-width:0}
+.fsh-icon{width:38px;height:38px;border-radius:50%;background:var(--cr);display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;transition:var(--tr)}
+.form-section.open .fsh-icon{background:var(--m);color:var(--wh)}
+.fsh-title{font-weight:600;font-size:.94rem;color:var(--ch)}
+.fsh-sub{font-size:.76rem;color:var(--ch3);margin-top:1px}
+.fsh-chevron{transition:var(--tr);color:var(--ch3);flex-shrink:0}
+.form-section.open .fsh-chevron{transform:rotate(180deg);color:var(--m)}
+.fsb{padding:1.5rem 1.6rem;border-top:1px solid var(--gl);display:none}
+.form-section.open .fsb{display:block}
+.fg{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
+.fg.c1{grid-template-columns:1fr}
+.fg.c3{grid-template-columns:1fr 1fr 1fr}
+.fgroup{display:flex;flex-direction:column;gap:5px}
+.fgroup.s2{grid-column:span 2}
+.fgroup.s3{grid-column:span 3}
+label.lbl{font-size:.71rem;font-weight:700;color:var(--ch2);text-transform:uppercase;letter-spacing:.08em;display:flex;gap:6px;align-items:center}
+.opt{font-weight:400;color:var(--ch3);text-transform:none;letter-spacing:0;font-size:.72rem}
+input[type=text],input[type=email],input[type=tel],input[type=date],input[type=time],input[type=range],select,textarea{
+  padding:10px 13px;border:1.5px solid var(--gl);border-radius:8px;font-family:var(--fu);font-size:.88rem;color:var(--ch);background:var(--wh);transition:var(--tr);outline:none;width:100%}
+input:focus,select:focus,textarea:focus{border-color:var(--m);box-shadow:0 0 0 3px rgba(124,31,31,.1)}
+textarea{resize:vertical;min-height:72px}
+select{cursor:pointer;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%238C827A' stroke-width='2.5'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 11px center;padding-right:34px}
+.hint{font-size:.71rem;color:var(--ch3);margin-top:2px}
+.sub-label{font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--ch3);grid-column:1/-1;border-top:1px solid var(--gl);margin-top:4px;padding-top:14px}
+
+/* Religion conditional */
+.rc{display:none}
+.religion-hindu .rc.rh{display:grid}
+.religion-muslim .rc.rm{display:grid}
+.religion-sikh .rc.rs{display:grid}
+.religion-christian .rc.rch{display:grid}
+.religion-jain .rc.rj{display:grid}
+
+/* Invocation presets */
+.invoc-presets{display:flex;flex-wrap:wrap;gap:7px;margin-top:8px}
+.inv-preset{padding:6px 13px;border-radius:100px;border:1.5px solid var(--gl);font-size:.76rem;cursor:pointer;transition:var(--tr);background:var(--wh);color:var(--ch2);font-family:var(--fd);line-height:1.4}
+.inv-preset:hover{border-color:var(--m);color:var(--m)}
+.inv-preset.active{background:var(--g3);border-color:var(--g);color:var(--ch)}
+
+/* Photo upload */
+.photo-zone{border:2px dashed var(--gl);border-radius:var(--r);padding:1.8rem;text-align:center;cursor:pointer;transition:var(--tr);background:var(--cr);position:relative;overflow:hidden}
+.photo-zone:hover{border-color:var(--m);background:var(--cr2)}
+.photo-zone-inner{display:flex;flex-direction:column;align-items:center;gap:8px;pointer-events:none}
+#photo-preview-img{width:90px;height:90px;border-radius:50%;object-fit:cover;border:3px solid var(--g);display:none}
+.photo-icon{font-size:2.4rem;opacity:.3}
+.photo-text{font-size:.82rem;color:var(--ch2);line-height:1.5}
+.photo-text strong{color:var(--m)}
+.photo-actions{display:flex;gap:8px;justify-content:center;margin-top:10px}
+.photo-btn{padding:6px 16px;border-radius:100px;font-size:.78rem;font-weight:600;cursor:pointer;transition:var(--tr);font-family:var(--fu);border:1.5px solid var(--gl);background:var(--wh);color:var(--ch2)}
+.photo-btn:hover{border-color:var(--m);color:var(--m)}
+.photo-btn.danger{border-color:#FCA5A5;color:#DC2626}
+.photo-btn.danger:hover{background:#FEF2F2}
+
+/* Siblings */
+.siblings-list{display:flex;flex-direction:column;gap:8px;margin-bottom:12px}
+.sib-row{display:grid;grid-template-columns:1fr 1fr auto;gap:8px;align-items:center}
+.btn-add-sib{width:100%;padding:9px;border:1.5px dashed var(--m);background:none;border-radius:8px;color:var(--m);font-size:.82rem;font-weight:600;cursor:pointer;transition:var(--tr);font-family:var(--fu)}
+.btn-add-sib:hover{background:rgba(124,31,31,.06)}
+.btn-rm{width:28px;height:28px;border-radius:50%;background:#FEE2E2;border:none;color:#DC2626;cursor:pointer;font-size:1rem;line-height:1;transition:var(--tr);flex-shrink:0}
+.btn-rm:hover{background:#FECACA}
+
+/* Lifestyle chips */
+.lifestyle-group{display:flex;flex-wrap:wrap;gap:7px}
+.ls-chip{padding:7px 14px;border-radius:100px;border:1.5px solid var(--gl);font-size:.78rem;cursor:pointer;transition:var(--tr);background:var(--wh);color:var(--ch2);font-family:var(--fu);font-weight:500}
+.ls-chip:hover{border-color:var(--ch2)}
+.ls-chip.active{background:var(--ch);border-color:var(--ch);color:var(--wh)}
+
+/* ============================================================ PREVIEW PANEL ============================================================ */
+.preview-panel{position:sticky;top:74px;display:flex;flex-direction:column;gap:1rem}
+.preview-controls{background:var(--wh);border-radius:var(--r2);border:1px solid var(--gl);padding:1.1rem 1.2rem;box-shadow:var(--sh1)}
+.pc-label{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--ch3);margin-bottom:10px}
+.tpl-pills{display:flex;gap:6px;flex-wrap:wrap}
+.tpl-pill{padding:6px 13px;border-radius:100px;border:1.5px solid var(--gl);font-size:.76rem;font-weight:600;cursor:pointer;transition:var(--tr);background:var(--wh);color:var(--ch2)}
+.tpl-pill:hover{border-color:var(--m);color:var(--m)}
+.tpl-pill.active{background:var(--m);border-color:var(--m);color:var(--wh)}
+
+.biodata-wrapper{border-radius:var(--r);box-shadow:var(--sh3);overflow:hidden;background:var(--wh)}
+.biodata-scaler{width:100%;overflow:hidden;position:relative}
+#biodata-card{width:595px;transform-origin:top left;font-family:var(--fu);color:#2C2420;position:relative}
+
+/* ============================================================ DOWNLOAD ============================================================ */
+.dl-actions{display:flex;flex-direction:column;gap:10px}
+.btn-dl{display:flex;align-items:center;justify-content:center;gap:8px;padding:13px 24px;border-radius:var(--r);border:none;font-family:var(--fu);font-size:.9rem;font-weight:600;cursor:pointer;transition:var(--tr);width:100%}
+.btn-dl-pdf{background:var(--m);color:var(--wh);box-shadow:0 4px 18px rgba(124,31,31,.32)}
+.btn-dl-pdf:hover{background:var(--m2);transform:translateY(-2px);box-shadow:0 8px 28px rgba(124,31,31,.42)}
+.btn-dl-png{background:var(--wh);color:var(--ch);border:1.5px solid var(--gl)}
+.btn-dl-png:hover{border-color:var(--m);color:var(--m)}
+.btn-dl.busy{opacity:.65;cursor:not-allowed;pointer-events:none}
+.btn-clear-form{background:none;border:none;color:var(--ch3);font-size:.76rem;cursor:pointer;text-align:center;padding:4px;transition:var(--tr);font-family:var(--fu);width:100%}
+.btn-clear-form:hover{color:var(--m)}
+.privacy-badge{display:flex;align-items:center;gap:7px;font-size:.73rem;color:var(--ch3);justify-content:center;padding:9px 12px;background:var(--cr);border-radius:8px;border:1px solid var(--gl);line-height:1.4}
+
+/* ============================================================ CROP MODAL ============================================================ */
+#crop-modal{position:fixed;inset:0;z-index:1000;display:none;align-items:center;justify-content:center;padding:1rem}
+.crop-overlay{position:absolute;inset:0;background:rgba(0,0,0,.75);backdrop-filter:blur(6px)}
+.crop-dialog{position:relative;background:var(--wh);border-radius:var(--r2);padding:2rem;width:100%;max-width:420px;box-shadow:var(--sh4);z-index:1;text-align:center}
+.crop-dialog h3{font-family:var(--ff);font-size:1.5rem;color:var(--ch);margin-bottom:.4rem}
+.crop-dialog p{font-size:.82rem;color:var(--ch3);margin-bottom:1.2rem}
+#crop-canvas{border-radius:var(--r);cursor:grab;width:100%;max-width:320px;touch-action:none;display:block;margin:0 auto}
+#crop-canvas:active{cursor:grabbing}
+.crop-zoom-row{display:flex;align-items:center;gap:12px;margin:1.2rem 0 1.4rem}
+.crop-zoom-row label{font-size:.78rem;font-weight:700;color:var(--ch2);white-space:nowrap}
+#crop-zoom{padding:0;height:4px;border:none;border-radius:100px;accent-color:var(--m)}
+.crop-btns{display:flex;gap:10px}
+.crop-btns button{flex:1;padding:11px;border-radius:100px;font-family:var(--fu);font-size:.88rem;font-weight:600;cursor:pointer;border:1.5px solid var(--gl);background:var(--wh);color:var(--ch);transition:var(--tr)}
+.crop-btns button:hover{border-color:var(--ch2)}
+.crop-btns .btn-apply{background:var(--m);color:var(--wh);border-color:var(--m)}
+.crop-btns .btn-apply:hover{background:var(--m2)}
+
+/* ============================================================ TEMPLATE 1: MARIGOLD CLASSIC ============================================================ */
+#biodata-card.t-m{background:#FDF8F0}
+#biodata-card.t-m .bc-invoc{background:linear-gradient(135deg,#7C1F1F,#4A1010);padding:7px 14px;text-align:center;font-family:var(--fd);font-size:8px;color:rgba(255,255,255,.65);letter-spacing:.25em}
+#biodata-card.t-m .bc-header{background:linear-gradient(135deg,#7C1F1F 0%,#4A1010 100%);padding:14px;position:relative}
+#biodata-card.t-m .bc-head-inner{display:flex;gap:12px;align-items:flex-start}
+#biodata-card.t-m .bc-photo{width:74px;height:74px;border-radius:50%;border:2.5px solid #C9940C;overflow:hidden;flex-shrink:0;background:rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center}
+#biodata-card.t-m .bc-photo img{width:100%;height:100%;object-fit:cover;display:none}
+#biodata-card.t-m .bc-photo-ph{font-size:1.8rem;opacity:.3;color:white}
+#biodata-card.t-m .bc-name-block{flex:1;padding-top:4px}
+#biodata-card.t-m .bc-name{font-family:var(--ff);font-size:22px;font-weight:700;color:#E8B84B;letter-spacing:-.01em;line-height:1.15}
+#biodata-card.t-m .bc-subt{font-size:7.5px;color:rgba(255,255,255,.7);margin-top:4px;line-height:1.6}
+#biodata-card.t-m .bc-gold-bar{height:2px;background:linear-gradient(90deg,transparent,#C9940C,transparent);margin-top:12px}
+#biodata-card.t-m .bc-body{background:#FDF8F0;padding:12px}
+#biodata-card.t-m .bc-sec{margin-bottom:10px}
+#biodata-card.t-m .bc-sec-title{font-size:7px;font-weight:700;text-transform:uppercase;letter-spacing:.15em;color:#7C1F1F;padding-bottom:3px;border-bottom:1.5px solid #C9940C;margin-bottom:7px;display:flex;align-items:center;gap:5px}
+#biodata-card.t-m .bc-sec-title::before{content:'◆';font-size:5px;color:#C9940C}
+#biodata-card.t-m .bc-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 10px}
+#biodata-card.t-m .bc-field{display:flex;gap:3px;padding:2.5px 0;border-bottom:1px dotted rgba(201,148,12,.22)}
+#biodata-card.t-m .bc-lbl{font-size:7.5px;color:#8C827A;min-width:68px;flex-shrink:0}
+#biodata-card.t-m .bc-val{font-size:8px;font-weight:600;color:#2C2420;flex:1}
+#biodata-card.t-m .bc-field.full{grid-column:1/-1}
+#biodata-card.t-m .bc-footer{background:linear-gradient(135deg,#7C1F1F,#4A1010);padding:7px 14px;display:flex;justify-content:center;align-items:center}
+#biodata-card.t-m .bc-footer-text{font-size:7px;color:rgba(255,255,255,.45);letter-spacing:.15em}
+
+/* ============================================================ TEMPLATE 2: NAVY PROFESSIONAL ============================================================ */
+#biodata-card.t-n{background:#fff}
+#biodata-card.t-n .bc-invoc{background:#1A2744;padding:7px 14px;text-align:right;font-size:8px;color:rgba(255,255,255,.45);letter-spacing:.15em;font-style:italic}
+#biodata-card.t-n .bc-header{background:#1A2744;padding:14px;position:relative}
+#biodata-card.t-n .bc-head-inner{display:flex;gap:12px;align-items:flex-start}
+#biodata-card.t-n .bc-photo{width:64px;height:78px;border-radius:6px;overflow:hidden;flex-shrink:0;background:rgba(255,255,255,.1);border:1.5px solid rgba(255,255,255,.25);display:flex;align-items:center;justify-content:center}
+#biodata-card.t-n .bc-photo img{width:100%;height:100%;object-fit:cover;display:none}
+#biodata-card.t-n .bc-photo-ph{font-size:1.6rem;opacity:.3;color:white}
+#biodata-card.t-n .bc-name-block{flex:1;padding-top:4px}
+#biodata-card.t-n .bc-name{font-size:20px;font-weight:700;color:#fff;letter-spacing:-.02em;line-height:1.15}
+#biodata-card.t-n .bc-subt{font-size:7.5px;color:rgba(255,255,255,.6);margin-top:5px;line-height:1.6}
+#biodata-card.t-n .bc-accent{height:3px;background:linear-gradient(90deg,#4A7FC1,#63B3ED,#A8D8F0)}
+#biodata-card.t-n .bc-body{background:#fff;padding:12px}
+#biodata-card.t-n .bc-sec{margin-bottom:10px}
+#biodata-card.t-n .bc-sec-title{font-size:7.5px;font-weight:700;text-transform:uppercase;letter-spacing:.15em;color:#1A2744;margin-bottom:6px;display:flex;align-items:center;gap:6px}
+#biodata-card.t-n .bc-sec-title::after{content:'';flex:1;height:1px;background:#E8E0D5}
+#biodata-card.t-n .bc-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 10px}
+#biodata-card.t-n .bc-field{padding:2.5px 0;border-bottom:1px solid #F0EAE0;display:flex;justify-content:space-between;align-items:baseline;gap:4px}
+#biodata-card.t-n .bc-lbl{font-size:7.5px;color:#8C827A;flex-shrink:0}
+#biodata-card.t-n .bc-val{font-size:8px;font-weight:600;color:#1A2744;text-align:right}
+#biodata-card.t-n .bc-field.full{grid-column:1/-1}
+#biodata-card.t-n .bc-field.full .bc-val{text-align:left}
+#biodata-card.t-n .bc-footer{background:#1A2744;padding:7px 14px;text-align:center}
+#biodata-card.t-n .bc-footer-text{font-size:7px;color:rgba(255,255,255,.38);letter-spacing:.15em}
+
+/* ============================================================ TEMPLATE 3: ROSE FLORAL ============================================================ */
+#biodata-card.t-r{background:#FFF9F9}
+#biodata-card.t-r .bc-invoc{background:linear-gradient(135deg,#A0435F,#7A2F48);padding:7px 14px;text-align:center;font-family:var(--fd);font-size:8px;color:rgba(255,255,255,.55);letter-spacing:.22em}
+#biodata-card.t-r .bc-header{background:linear-gradient(135deg,#A0435F 0%,#7A2F48 100%);padding:14px;text-align:center;position:relative}
+#biodata-card.t-r .bc-photo{width:72px;height:72px;border-radius:50%;border:3px solid rgba(255,255,255,.55);overflow:hidden;margin:0 auto 8px;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center}
+#biodata-card.t-r .bc-photo img{width:100%;height:100%;object-fit:cover;display:none}
+#biodata-card.t-r .bc-photo-ph{font-size:1.8rem;opacity:.35;color:white}
+#biodata-card.t-r .bc-name{font-family:var(--ff);font-size:21px;font-weight:700;font-style:italic;color:#fff;line-height:1.15}
+#biodata-card.t-r .bc-subt{font-size:7.5px;color:rgba(255,255,255,.65);margin-top:4px;line-height:1.6}
+#biodata-card.t-r .bc-floral-div{font-size:10px;color:rgba(255,255,255,.38);letter-spacing:10px;margin-top:6px}
+#biodata-card.t-r .bc-body{background:#FFF9F9;padding:12px}
+#biodata-card.t-r .bc-sec{margin-bottom:10px}
+#biodata-card.t-r .bc-sec-title{font-size:7.5px;font-weight:700;text-transform:uppercase;letter-spacing:.16em;color:#A0435F;text-align:center;margin-bottom:7px;display:flex;align-items:center;gap:4px;justify-content:center}
+#biodata-card.t-r .bc-sec-title::before,#biodata-card.t-r .bc-sec-title::after{content:'✿';font-size:8px;opacity:.5}
+#biodata-card.t-r .bc-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px 10px}
+#biodata-card.t-r .bc-field{display:flex;gap:3px;padding:2.5px 5px;background:rgba(160,67,95,.04);border-radius:3px;margin-bottom:1px}
+#biodata-card.t-r .bc-lbl{font-size:7.5px;color:#A0435F;min-width:65px;flex-shrink:0}
+#biodata-card.t-r .bc-val{font-size:8px;font-weight:600;color:#3D2020;flex:1}
+#biodata-card.t-r .bc-field.full{grid-column:1/-1}
+#biodata-card.t-r .bc-footer{background:linear-gradient(135deg,#A0435F,#7A2F48);padding:7px 14px;text-align:center}
+#biodata-card.t-r .bc-footer-text{font-size:7px;color:rgba(255,255,255,.42);letter-spacing:.15em}
+
+/* ============================================================ TEMPLATE 4: SAFFRON ROYAL ============================================================ */
+#biodata-card.t-s{background:#FFFBF5}
+#biodata-card.t-s .bc-invoc{background:linear-gradient(135deg,#C15B12,#8A3A06);padding:9px 14px;text-align:center;font-family:var(--fd);font-size:9px;color:rgba(255,255,255,.7);letter-spacing:.2em;border-bottom:2px solid #E8A030}
+#biodata-card.t-s .bc-header{background:linear-gradient(180deg,#C15B12 0%,#8A3A06 100%);padding:14px;position:relative}
+#biodata-card.t-s .bc-header::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='rgba(255,255,255,0.04)'%3E%3Cpath d='M20 4L36 20L20 36L4 20Z'/%3E%3C/g%3E%3C/svg%3E");opacity:0.4}
+#biodata-card.t-s .bc-head-inner{display:flex;gap:12px;align-items:flex-start;position:relative}
+#biodata-card.t-s .bc-photo{width:74px;height:74px;border-radius:50%;border:3px solid #F5C842;overflow:hidden;flex-shrink:0;background:rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 4px rgba(245,200,66,.2)}
+#biodata-card.t-s .bc-photo img{width:100%;height:100%;object-fit:cover;display:none}
+#biodata-card.t-s .bc-photo-ph{font-size:1.8rem;opacity:.3;color:white}
+#biodata-card.t-s .bc-name-block{flex:1;padding-top:4px}
+#biodata-card.t-s .bc-name{font-family:var(--fp);font-size:22px;font-weight:700;color:#FDE68A;letter-spacing:-.01em;line-height:1.15}
+#biodata-card.t-s .bc-subt{font-size:7.5px;color:rgba(255,235,180,.75);margin-top:4px;line-height:1.6}
+#biodata-card.t-s .bc-gold-bar{height:3px;background:linear-gradient(90deg,transparent,#F5C842,transparent);margin-top:12px}
+#biodata-card.t-s .bc-body{background:#FFFBF5;padding:12px}
+#biodata-card.t-s .bc-sec{margin-bottom:10px}
+#biodata-card.t-s .bc-sec-title{font-size:7px;font-weight:700;text-transform:uppercase;letter-spacing:.15em;color:#8A3A06;padding-bottom:3px;border-bottom:1.5px solid #E8A030;margin-bottom:7px;display:flex;align-items:center;gap:5px}
+#biodata-card.t-s .bc-sec-title::before{content:'❋';font-size:7px;color:#E8A030}
+#biodata-card.t-s .bc-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 10px}
+#biodata-card.t-s .bc-field{display:flex;gap:3px;padding:2.5px 4px;border-bottom:1px dashed rgba(193,91,18,.2)}
+#biodata-card.t-s .bc-lbl{font-size:7.5px;color:#9A6030;min-width:68px;flex-shrink:0}
+#biodata-card.t-s .bc-val{font-size:8px;font-weight:600;color:#3D1C06;flex:1}
+#biodata-card.t-s .bc-field.full{grid-column:1/-1}
+#biodata-card.t-s .bc-footer{background:linear-gradient(135deg,#C15B12,#8A3A06);padding:7px 14px;text-align:center;border-top:2px solid #E8A030}
+#biodata-card.t-s .bc-footer-text{font-size:7px;color:rgba(255,235,180,.45);letter-spacing:.15em}
+
+/* ============================================================ TEMPLATE 5: PEACOCK EMERALD ============================================================ */
+#biodata-card.t-p{background:#F0FAF5}
+#biodata-card.t-p .bc-invoc{background:linear-gradient(135deg,#1A5C4A,#0D3D31);padding:7px 14px;text-align:center;font-family:var(--fd);font-size:8px;color:rgba(255,255,255,.55);letter-spacing:.22em}
+#biodata-card.t-p .bc-header{background:linear-gradient(135deg,#1A5C4A 0%,#0D3D31 100%);padding:14px;position:relative}
+#biodata-card.t-p .bc-head-inner{display:flex;gap:12px;align-items:flex-start}
+#biodata-card.t-p .bc-photo{width:74px;height:74px;border-radius:50%;border:2.5px solid #4CAF86;overflow:hidden;flex-shrink:0;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center}
+#biodata-card.t-p .bc-photo img{width:100%;height:100%;object-fit:cover;display:none}
+#biodata-card.t-p .bc-photo-ph{font-size:1.8rem;opacity:.3;color:white}
+#biodata-card.t-p .bc-name-block{flex:1;padding-top:4px}
+#biodata-card.t-p .bc-name{font-family:var(--ff);font-size:22px;font-weight:700;color:#A7F3D0;letter-spacing:-.01em;line-height:1.15}
+#biodata-card.t-p .bc-subt{font-size:7.5px;color:rgba(167,243,208,.75);margin-top:4px;line-height:1.6}
+#biodata-card.t-p .bc-acc-bar{height:2px;background:linear-gradient(90deg,#4CAF86,#A7F3D0,#4CAF86);margin-top:12px}
+#biodata-card.t-p .bc-body{background:#F0FAF5;padding:12px}
+#biodata-card.t-p .bc-sec{margin-bottom:10px}
+#biodata-card.t-p .bc-sec-title{font-size:7px;font-weight:700;text-transform:uppercase;letter-spacing:.15em;color:#1A5C4A;padding-bottom:3px;border-bottom:1.5px solid #4CAF86;margin-bottom:7px;display:flex;align-items:center;gap:5px}
+#biodata-card.t-p .bc-sec-title::before{content:'❦';font-size:9px;color:#4CAF86}
+#biodata-card.t-p .bc-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 10px}
+#biodata-card.t-p .bc-field{display:flex;gap:3px;padding:2.5px 0;border-bottom:1px dotted rgba(26,92,74,.2)}
+#biodata-card.t-p .bc-lbl{font-size:7.5px;color:#3A7A62;min-width:68px;flex-shrink:0}
+#biodata-card.t-p .bc-val{font-size:8px;font-weight:600;color:#0D3D31;flex:1}
+#biodata-card.t-p .bc-field.full{grid-column:1/-1}
+#biodata-card.t-p .bc-footer{background:linear-gradient(135deg,#1A5C4A,#0D3D31);padding:7px 14px;text-align:center}
+#biodata-card.t-p .bc-footer-text{font-size:7px;color:rgba(167,243,208,.4);letter-spacing:.15em}
+
+/* ============================================================ TEMPLATE 6: MIDNIGHT LUXE ============================================================ */
+#biodata-card.t-x{background:#F8F7FF}
+#biodata-card.t-x .bc-invoc{background:linear-gradient(135deg,#0D0D1A,#1A1A3A);padding:9px 14px;text-align:center;font-family:var(--fd);font-size:9px;color:rgba(232,184,75,.6);letter-spacing:.28em}
+#biodata-card.t-x .bc-header{background:linear-gradient(135deg,#0D0D1A 0%,#1A1A3A 60%,#0D0D1A 100%);padding:14px;position:relative}
+#biodata-card.t-x .bc-header::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,#E8B84B,transparent)}
+#biodata-card.t-x .bc-head-inner{display:flex;gap:12px;align-items:flex-start}
+#biodata-card.t-x .bc-photo{width:74px;height:74px;border-radius:50%;border:2px solid #E8B84B;overflow:hidden;flex-shrink:0;background:rgba(232,184,75,.08);display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 3px rgba(232,184,75,.15),0 0 20px rgba(232,184,75,.08)}
+#biodata-card.t-x .bc-photo img{width:100%;height:100%;object-fit:cover;display:none}
+#biodata-card.t-x .bc-photo-ph{font-size:1.8rem;opacity:.3;color:#E8B84B}
+#biodata-card.t-x .bc-name-block{flex:1;padding-top:4px}
+#biodata-card.t-x .bc-name{font-family:var(--fp);font-style:italic;font-size:22px;font-weight:700;color:#E8B84B;letter-spacing:.01em;line-height:1.15}
+#biodata-card.t-x .bc-subt{font-size:7.5px;color:rgba(232,184,75,.55);margin-top:4px;line-height:1.6;letter-spacing:.05em}
+#biodata-card.t-x .bc-body{background:#F8F7FF;padding:12px}
+#biodata-card.t-x .bc-sec{margin-bottom:10px}
+#biodata-card.t-x .bc-sec-title{font-size:7px;font-weight:700;text-transform:uppercase;letter-spacing:.18em;color:#1A1A3A;padding-bottom:3px;border-bottom:1px solid #1A1A3A;margin-bottom:7px;display:flex;align-items:center;gap:6px}
+#biodata-card.t-x .bc-sec-title::before{content:'';width:12px;height:1px;background:#E8B84B}
+#biodata-card.t-x .bc-sec-title::after{content:'';flex:1;height:1px;background:rgba(26,26,58,.2)}
+#biodata-card.t-x .bc-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 10px}
+#biodata-card.t-x .bc-field{display:flex;gap:3px;padding:2.5px 3px;border-bottom:1px solid rgba(26,26,58,.1)}
+#biodata-card.t-x .bc-lbl{font-size:7.5px;color:#6060A0;min-width:68px;flex-shrink:0;letter-spacing:.03em}
+#biodata-card.t-x .bc-val{font-size:8px;font-weight:600;color:#0D0D1A;flex:1}
+#biodata-card.t-x .bc-field.full{grid-column:1/-1}
+#biodata-card.t-x .bc-footer{background:linear-gradient(135deg,#0D0D1A,#1A1A3A);padding:7px 14px;text-align:center;border-top:1px solid rgba(232,184,75,.3)}
+#biodata-card.t-x .bc-footer-text{font-size:7px;color:rgba(232,184,75,.35);letter-spacing:.2em}
+
+/* ============================================================ FEATURES ============================================================ */
+.features{padding:4rem 2rem;background:var(--ch)}
+.features-inner{max-width:1100px;margin:0 auto}
+.features-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:2.2rem}
+.feat-card{padding:1.5rem;border-radius:var(--r);background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);transition:var(--tr)}
+.feat-card:hover{background:rgba(255,255,255,.08);transform:translateY(-3px)}
+.feat-icon{font-size:1.9rem;margin-bottom:.75rem}
+.feat-title{font-weight:600;font-size:.88rem;color:var(--g2);margin-bottom:.4rem}
+.feat-desc{font-size:.78rem;color:rgba(255,255,255,.55);line-height:1.65}
+
+/* ============================================================ FAQ ============================================================ */
+.faq-section{padding:4.5rem 2rem;background:var(--m)}
+.faq-inner{max-width:800px;margin:0 auto;text-align:center}
+.faq-section .sec-kicker{color:var(--g2)}
+.faq-section .sec-title{color:var(--wh)}
+.faq-list{margin-top:2.2rem;text-align:left}
+.faq-item{border-bottom:1px solid rgba(255,255,255,.14)}
+.faq-q{padding:1.1rem 0;font-weight:500;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;font-size:.9rem;color:rgba(255,255,255,.9);transition:var(--tr)}
+.faq-q:hover{color:var(--g2)}
+.faq-a{padding:0 0 1.1rem;color:rgba(255,255,255,.65);font-size:.85rem;line-height:1.8;display:none}
+.faq-item.open .faq-a{display:block}
+.faq-chevron{transition:var(--tr);opacity:.65;flex-shrink:0}
+.faq-item.open .faq-chevron{transform:rotate(180deg);opacity:1}
+
+/* ============================================================ FOOTER ============================================================ */
+footer{background:var(--ch);color:rgba(255,255,255,.6);padding:3rem 2rem 1.5rem;text-align:center}
+.footer-brand{font-family:var(--ff);font-size:2.1rem;font-weight:700;color:var(--g2);margin-bottom:.4rem}
+.footer-sub{font-size:.8rem;opacity:.45;margin-bottom:1.8rem}
+.footer-links{display:flex;justify-content:center;gap:2rem;margin-bottom:2rem;flex-wrap:wrap}
+.footer-links a{font-size:.8rem;color:rgba(255,255,255,.45);text-decoration:none;transition:var(--tr)}
+.footer-links a:hover{color:var(--g2)}
+.footer-copy{font-size:.73rem;opacity:.28;border-top:1px solid rgba(255,255,255,.08);padding-top:1.5rem}
+
+/* ============================================================ TOAST ============================================================ */
+#toast{position:fixed;bottom:2rem;left:50%;transform:translateX(-50%) translateY(80px);background:var(--ch);color:var(--wh);padding:11px 26px;border-radius:100px;font-size:.86rem;font-weight:500;transition:transform .4s cubic-bezier(.34,1.56,.64,1);z-index:2000;box-shadow:var(--sh4);pointer-events:none}
+#toast.show{transform:translateX(-50%) translateY(0)}
+
+/* ============================================================ ANIMATIONS ============================================================ */
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+.fu{animation:fadeUp .65s ease both}
+.fu1{animation-delay:.08s}.fu2{animation-delay:.18s}.fu3{animation-delay:.28s}.fu4{animation-delay:.38s}
+
+/* ============================================================ RESPONSIVE ============================================================ */
+@media(max-width:1100px){
+  .builder-layout{grid-template-columns:1fr}
+  .preview-panel{position:static}
+  .tpl-grid{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:768px){
+  .nav-links{display:none}
+  .fg{grid-template-columns:1fr}
+  .fg.c3{grid-template-columns:1fr 1fr}
+  .fgroup.s2,.fgroup.s3{grid-column:span 1}
+  .stats{gap:0}
+  .stat{padding:.8rem 1.2rem}
+  .features-grid{grid-template-columns:1fr 1fr}
+  .tpl-grid{grid-template-columns:1fr 1fr}
+  .seo-grid{grid-template-columns:1fr}
+  .sib-row{grid-template-columns:1fr 1fr auto}
+}
+@media(max-width:480px){
+  .hero h1{font-size:2.2rem}
+  .stat{border-right:none;border-bottom:1px solid rgba(255,255,255,.12)}
+  .features-grid{grid-template-columns:1fr}
+  .tpl-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- ============================= CROP MODAL ============================= -->
+<div id="crop-modal" style="display:none;position:fixed;inset:0;z-index:1000;align-items:center;justify-content:center;padding:1rem">
+  <div class="crop-overlay" onclick="closeCropModal()"></div>
+  <div class="crop-dialog">
+    <h3>✂️ Crop Your Photo</h3>
+    <p>Drag to reposition · Scroll or pinch to zoom</p>
+    <canvas id="crop-canvas" width="320" height="320"></canvas>
+    <div class="crop-zoom-row">
+      <label>🔍 Zoom</label>
+      <input type="range" id="crop-zoom" min="0.3" max="4" step="0.01" value="1" oninput="onZoomSlider(this.value)">
+    </div>
+    <div class="crop-btns">
+      <button onclick="closeCropModal()">Cancel</button>
+      <button class="btn-apply" onclick="applyCrop()">✓ Apply Photo</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============================= NAV ============================= -->
+<nav class="nav">
+  <a href="#" class="nav-brand">
+    <svg class="nav-logo-svg" viewBox="0 0 40 40" fill="none">
+      <circle cx="20" cy="20" r="19" fill="#7C1F1F" stroke="#C9940C" stroke-width="1.5"/>
+      <text x="20" y="26" text-anchor="middle" font-family="Noto Sans Devanagari,serif" font-size="16" fill="#E8B84B">ॐ</text>
+    </svg>
+    <span class="brand-name">Vivah<span>Biodata</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#templates">Templates</a></li>
+    <li><a href="#builder">Create</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="lang-toggle">
+      <button class="lang-btn active" id="btnEn" onclick="setLang('en')">EN</button>
+      <button class="lang-btn" id="btnHi" onclick="setLang('hi')">हि</button>
+    </div>
+    <a href="#builder" class="btn-primary" style="padding:9px 22px;font-size:.82rem">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
+      Create Biodata
+    </a>
+  </div>
+</nav>
+
+<!-- ============================= HERO ============================= -->
+<section class="hero">
+  <svg class="hero-mandala" viewBox="0 0 200 200" fill="none">
+    <circle cx="100" cy="100" r="90" stroke="#C9940C" stroke-width=".5" stroke-dasharray="4 8"/>
+    <circle cx="100" cy="100" r="70" stroke="#C9940C" stroke-width=".5" stroke-dasharray="2 6"/>
+    <circle cx="100" cy="100" r="50" stroke="#C9940C" stroke-width=".5"/>
+    <circle cx="100" cy="100" r="30" stroke="#C9940C" stroke-width=".4"/>
+    <path d="M100 10L110 90L190 100L110 110L100 190L90 110L10 100L90 90Z" fill="#C9940C" opacity=".25"/>
+    <path d="M100 30L107 93L170 100L107 107L100 170L93 107L30 100L93 93Z" fill="#C9940C" opacity=".18"/>
+    <path d="M100 55L105 95L145 100L105 105L100 145L95 105L55 100L95 95Z" fill="#C9940C" opacity=".12"/>
+  </svg>
+  <svg class="hero-mandala2" viewBox="0 0 200 200" fill="none">
+    <circle cx="100" cy="100" r="90" stroke="#7C1F1F" stroke-width=".8" stroke-dasharray="3 7"/>
+    <path d="M100 10L110 90L190 100L110 110L100 190L90 110L10 100L90 90Z" fill="#7C1F1F" opacity=".28"/>
+  </svg>
+
+  <div class="hero-badge fu">
+    <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+    India's Most Complete Biodata Maker
+  </div>
+  <h1 class="fu fu1">Create your <em>perfect</em><br>marriage biodata</h1>
+  <p class="hero-sub fu fu2">6 stunning templates · Religious invocations (ॐ Ganesh, Bismillah, Cross, Waheguru) · Photo crop · Gotra, Rashi, Nakshatra · Zero signup · Free forever</p>
+  <div class="hero-chips fu fu3">
+    <div class="chip"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg> No signup ever</div>
+    <div class="chip"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Data stays on device</div>
+    <div class="chip"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg> 1-click PDF</div>
+    <div class="chip">🕉️ Religious Invocations</div>
+    <div class="chip">✂️ Photo Crop Tool</div>
+    <div class="chip">6 Premium Templates</div>
+    <div class="chip">Hindi &amp; English</div>
+  </div>
+  <div class="hero-actions fu fu4">
+    <a href="#builder" class="btn-primary">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
+      Start Creating Free
+    </a>
+    <a href="#templates" class="btn-secondary">View 6 Templates</a>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="stat"><span class="stat-n">100%</span><span class="stat-l">Free Forever</span></div>
+  <div class="stat"><span class="stat-n">0</span><span class="stat-l">Accounts Needed</span></div>
+  <div class="stat"><span class="stat-n">6</span><span class="stat-l">Premium Templates</span></div>
+  <div class="stat"><span class="stat-n">7+</span><span class="stat-l">Religions</span></div>
+  <div class="stat"><span class="stat-n">∞</span><span class="stat-l">Downloads Free</span></div>
+</div>
+
+<!-- ============================= TEMPLATES SHOWCASE ============================= -->
+<section class="section" id="templates">
+  <div class="section-inner">
+    <div class="templates-showcase">
+      <p class="sec-kicker">Templates</p>
+      <h2 class="sec-title">Six <em>stunning</em> designs</h2>
+      <p class="sec-sub">Switch between templates at any time — preview updates instantly. All free.</p>
+    </div>
+    <div class="tpl-grid">
+
+      <!-- 1. Marigold Classic -->
+      <div class="tpl-card active" onclick="setTemplate('t-m',this)">
+        <div class="tpl-thumb" style="background:linear-gradient(135deg,#FDF8F0,#F0E0C0)">
+          <div class="tpl-mini" style="background:#FDF8F0">
+            <div class="tpl-mini-header" style="background:linear-gradient(135deg,#7C1F1F,#4A1010)">ॐ श्री</div>
+            <div class="tpl-mini-body">
+              <div style="height:1px;background:#C9940C;margin-bottom:3px"></div>
+              <div class="tpl-mini-field"><div class="tpl-mini-label"></div><div class="tpl-mini-val"></div></div>
+              <div class="tpl-mini-field"><div class="tpl-mini-label"></div><div class="tpl-mini-val"></div></div>
+              <div class="tpl-mini-hr"></div>
+              <div class="tpl-mini-field"><div class="tpl-mini-label"></div><div class="tpl-mini-val"></div></div>
+              <div class="tpl-mini-field"><div class="tpl-mini-label"></div><div class="tpl-mini-val"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="tpl-card-info">
+          <div class="tpl-card-name">🏵️ Marigold Classic</div>
+          <div class="tpl-card-desc">Traditional Hindu wedding aesthetic. Warm gold & deep maroon with Om blessing.</div>
+        </div>
+      </div>
+
+      <!-- 2. Navy Professional -->
+      <div class="tpl-card" onclick="setTemplate('t-n',this)">
+        <div class="tpl-thumb" style="background:linear-gradient(135deg,#EEF2F8,#D8E4F0)">
+          <div class="tpl-mini" style="background:#fff">
+            <div class="tpl-mini-header" style="background:#1A2744">Professional</div>
+            <div style="height:2px;background:linear-gradient(90deg,#4A7FC1,#A8D8F0)"></div>
+            <div class="tpl-mini-body">
+              <div class="tpl-mini-field"><div class="tpl-mini-label"></div><div class="tpl-mini-val"></div></div>
+              <div class="tpl-mini-field"><div class="tpl-mini-label"></div><div class="tpl-mini-val"></div></div>
+              <div class="tpl-mini-hr"></div>
+              <div class="tpl-mini-field"><div class="tpl-mini-label"></div><div class="tpl-mini-val"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="tpl-card-info">
+          <div class="tpl-card-name">💼 Navy Professional</div>
+          <div class="tpl-card-desc">Clean, sharp, modern. Ideal for engineers, doctors, IAS officers.</div>
+        </div>
+      </div>
+
+      <!-- 3. Rose Floral -->
+      <div class="tpl-card" onclick="setTemplate('t-r',this)">
+        <div class="tpl-thumb" style="background:linear-gradient(135deg,#FFF0F3,#F5DDE5)">
+          <div class="tpl-mini" style="background:#FFF9F9">
+            <div class="tpl-mini-header" style="background:linear-gradient(135deg,#A0435F,#7A2F48);font-style:italic">✿ Floral</div>
+            <div class="tpl-mini-body">
+              <div class="tpl-mini-field" style="background:rgba(160,67,95,.04);border-radius:2px;padding:1px 2px"><div class="tpl-mini-label" style="background:rgba(160,67,95,.3)"></div><div class="tpl-mini-val" style="background:rgba(160,67,95,.15)"></div></div>
+              <div class="tpl-mini-field" style="background:rgba(160,67,95,.04);border-radius:2px;padding:1px 2px"><div class="tpl-mini-label" style="background:rgba(160,67,95,.3)"></div><div class="tpl-mini-val" style="background:rgba(160,67,95,.15)"></div></div>
+              <div class="tpl-mini-field" style="background:rgba(160,67,95,.04);border-radius:2px;padding:1px 2px"><div class="tpl-mini-label" style="background:rgba(160,67,95,.3)"></div><div class="tpl-mini-val" style="background:rgba(160,67,95,.15)"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="tpl-card-info">
+          <div class="tpl-card-name">🌸 Rose Floral</div>
+          <div class="tpl-card-desc">Elegant, feminine, romantic. Dusty rose palette with italic Cormorant name.</div>
+        </div>
+      </div>
+
+      <!-- 4. Saffron Royal -->
+      <div class="tpl-card" onclick="setTemplate('t-s',this)">
+        <div class="tpl-thumb" style="background:linear-gradient(135deg,#FFF3E0,#FFD9B0)">
+          <div class="tpl-mini" style="background:#FFFBF5">
+            <div class="tpl-mini-header" style="background:linear-gradient(135deg,#C15B12,#8A3A06)">❋ Royal</div>
+            <div style="height:2px;background:#E8A030"></div>
+            <div class="tpl-mini-body">
+              <div class="tpl-mini-field"><div class="tpl-mini-label" style="background:rgba(138,58,6,.3)"></div><div class="tpl-mini-val" style="background:rgba(138,58,6,.12)"></div></div>
+              <div class="tpl-mini-field"><div class="tpl-mini-label" style="background:rgba(138,58,6,.3)"></div><div class="tpl-mini-val" style="background:rgba(138,58,6,.12)"></div></div>
+              <div class="tpl-mini-hr" style="background:rgba(232,160,48,.4)"></div>
+              <div class="tpl-mini-field"><div class="tpl-mini-label" style="background:rgba(138,58,6,.3)"></div><div class="tpl-mini-val" style="background:rgba(138,58,6,.12)"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="tpl-card-info">
+          <div class="tpl-card-name">🧡 Saffron Royal <span class="tpl-badge new">NEW</span></div>
+          <div class="tbl-card-desc">Palatial & ornate. Saffron-orange with a heritage Rajputana feel.</div>
+        </div>
+      </div>
+
+      <!-- 5. Peacock Emerald -->
+      <div class="tpl-card" onclick="setTemplate('t-p',this)">
+        <div class="tpl-thumb" style="background:linear-gradient(135deg,#E8F5F0,#C8E8DA)">
+          <div class="tpl-mini" style="background:#F0FAF5">
+            <div class="tpl-mini-header" style="background:linear-gradient(135deg,#1A5C4A,#0D3D31)">❦ Emerald</div>
+            <div style="height:1.5px;background:linear-gradient(90deg,#4CAF86,#A7F3D0)"></div>
+            <div class="tpl-mini-body">
+              <div class="tpl-mini-field"><div class="tpl-mini-label" style="background:rgba(26,92,74,.3)"></div><div class="tpl-mini-val" style="background:rgba(26,92,74,.12)"></div></div>
+              <div class="tpl-mini-field"><div class="tpl-mini-label" style="background:rgba(26,92,74,.3)"></div><div class="tpl-mini-val" style="background:rgba(26,92,74,.12)"></div></div>
+              <div class="tpl-mini-hr" style="background:rgba(76,175,134,.4)"></div>
+              <div class="tpl-mini-field"><div class="tpl-mini-label" style="background:rgba(26,92,74,.3)"></div><div class="tpl-mini-val" style="background:rgba(26,92,74,.12)"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="tpl-card-info">
+          <div class="tpl-card-name">🦚 Peacock Emerald <span class="tpl-badge new">NEW</span></div>
+          <div class="tpl-card-desc">Exotic & distinctive. Deep emerald with gold accents. Truly unforgettable.</div>
+        </div>
+      </div>
+
+      <!-- 6. Midnight Luxe -->
+      <div class="tpl-card" onclick="setTemplate('t-x',this)">
+        <div class="tpl-thumb" style="background:linear-gradient(135deg,#1A1A2E,#2D2D50)">
+          <div class="tpl-mini" style="background:#F8F7FF">
+            <div class="tpl-mini-header" style="background:linear-gradient(135deg,#0D0D1A,#1A1A3A);font-style:italic;color:rgba(232,184,75,.7)">✦ Luxe</div>
+            <div style="height:1px;background:linear-gradient(90deg,transparent,#E8B84B,transparent)"></div>
+            <div class="tpl-mini-body">
+              <div class="tpl-mini-field"><div class="tpl-mini-label" style="background:rgba(26,26,58,.3)"></div><div class="tpl-mini-val" style="background:rgba(26,26,58,.12)"></div></div>
+              <div class="tpl-mini-field"><div class="tpl-mini-label" style="background:rgba(26,26,58,.3)"></div><div class="tpl-mini-val" style="background:rgba(26,26,58,.12)"></div></div>
+              <div class="tpl-mini-hr" style="background:rgba(232,184,75,.3)"></div>
+              <div class="tpl-mini-field"><div class="tpl-mini-label" style="background:rgba(26,26,58,.3)"></div><div class="tpl-mini-val" style="background:rgba(26,26,58,.12)"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="tpl-card-info">
+          <div class="tpl-card-name">🌙 Midnight Luxe <span class="tpl-badge new">NEW</span></div>
+          <div class="tpl-card-desc">Ultra-elegant dark theme. Gold on midnight. For connoisseurs of luxury.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= BUILDER ============================= -->
+<section id="builder" style="background:var(--cr)">
+<div style="max-width:1340px;margin:0 auto;padding:3rem 2rem 6rem">
+  <div class="builder-header">
+    <p class="sec-kicker">Builder</p>
+    <h2 class="sec-title">Fill once. <em>Download instantly.</em></h2>
+    <p class="sec-sub" style="font-size:.88rem;margin-top:.4rem">All data stays on your device. No login. No server. 100% private.</p>
+  </div>
+  <div class="builder-layout">
+
+    <!-- ======= FORM ======= -->
+    <div class="form-panel">
+
+      <!-- 0. DIVINE INVOCATION -->
+      <div class="form-section open" id="sec-invoc">
+        <div class="fsh" onclick="toggleSection(this)">
+          <div class="fsh-left">
+            <div class="fsh-icon">🙏</div>
+            <div>
+              <div class="fsh-title">Divine Invocation</div>
+              <div class="fsh-sub">Religious blessing shown at top of biodata</div>
+            </div>
+          </div>
+          <svg class="fsh-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="fsb">
+          <div class="fg c1">
+            <div class="fgroup">
+              <label class="lbl">Invocation Presets</label>
+              <div class="invoc-presets" id="invoc-presets">
+                <div class="inv-preset active" onclick="setInvoc(this,'ॐ श्री गणेशाय नमः')">ॐ श्री गणेशाय नमः</div>
+                <div class="inv-preset" onclick="setInvoc(this,'ॐ नमः शिवाय')">ॐ नमः शिवाय</div>
+                <div class="inv-preset" onclick="setInvoc(this,'श्री राम जय राम जय जय राम')">श्री राम जय राम</div>
+                <div class="inv-preset" onclick="setInvoc(this,'ॐ श्री लक्ष्मीनारायणाय नमः')">श्री लक्ष्मीनारायण</div>
+                <div class="inv-preset" onclick="setInvoc(this,'जय माता दी')">जय माता दी</div>
+                <div class="inv-preset" onclick="setInvoc(this,'بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ')">Bismillah ﷽</div>
+                <div class="inv-preset" onclick="setInvoc(this,'Bismillah hir Rahman nir Raheem')">Bismillah (English)</div>
+                <div class="inv-preset" onclick="setInvoc(this,'ੴ ਸਤਿ ਨਾਮੁ — Waheguru')">ੴ Waheguru</div>
+                <div class="inv-preset" onclick="setInvoc(this,'In the Name of the Father, the Son & the Holy Spirit')">✝ Holy Trinity</div>
+                <div class="inv-preset" onclick="setInvoc(this,'Glory be to God in the Highest')">Glory to God</div>
+                <div class="inv-preset" onclick="setInvoc(this,'॥ णमो अरिहंताणं ॥')">णमो अरिहंताणं</div>
+                <div class="inv-preset" onclick="setInvoc(this,'जय जिनेन्द्र')">जय जिनेन्द्र</div>
+                <div class="inv-preset" onclick="setInvoc(this,'')">None</div>
+              </div>
+            </div>
+            <div class="fgroup">
+              <label class="lbl" for="f-invoc-custom">Custom Invocation <span class="opt">(type your own)</span></label>
+              <input type="text" id="f-invoc-custom" placeholder="e.g. ॐ सर्वे भवन्तु सुखिनः" oninput="setInvocCustom(this.value)">
+              <div class="hint">This appears as the first line on your biodata. Leave empty to hide.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 1. PHOTO -->
+      <div class="form-section open" id="sec-photo">
+        <div class="fsh" onclick="toggleSection(this)">
+          <div class="fsh-left">
+            <div class="fsh-icon">📷</div>
+            <div>
+              <div class="fsh-title">Photo <span class="opt" style="text-transform:none;font-size:.76rem">(optional)</span></div>
+              <div class="fsh-sub">Upload & crop perfectly — stays on your device only</div>
+            </div>
+          </div>
+          <svg class="fsh-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="fsb">
+          <div class="photo-zone" id="photo-zone">
+            <input type="file" id="photo-input" accept="image/*" onchange="handlePhotoUpload(this)" style="position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%">
+            <div class="photo-zone-inner">
+              <img id="photo-preview-img" alt="Photo preview">
+              <div class="photo-icon" id="photo-icon">📷</div>
+              <div class="photo-text"><strong>Click to upload photo</strong><br>Photo crop tool opens automatically<br><small style="opacity:.6">JPG, PNG up to 10MB · Never uploaded anywhere</small></div>
+            </div>
+          </div>
+          <div class="photo-actions" id="photo-actions" style="display:none">
+            <button class="photo-btn" onclick="document.getElementById('photo-input').click()">Change Photo</button>
+            <button class="photo-btn" onclick="reopenCrop()">Re-crop</button>
+            <button class="photo-btn danger" onclick="removePhoto()">Remove</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. PERSONAL -->
+      <div class="form-section open" id="sec-personal">
+        <div class="fsh" onclick="toggleSection(this)">
+          <div class="fsh-left">
+            <div class="fsh-icon">👤</div>
+            <div>
+              <div class="fsh-title" data-en="Personal Details" data-hi="व्यक्तिगत विवरण">Personal Details</div>
+              <div class="fsh-sub">Name, DOB, height, complexion, hobbies, lifestyle</div>
+            </div>
+          </div>
+          <svg class="fsh-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="fsb">
+          <div class="fg">
+            <div class="fgroup s2">
+              <label class="lbl" for="f-name" data-en="Full Name" data-hi="पूरा नाम">Full Name</label>
+              <input type="text" id="f-name" data-field="name" placeholder="e.g. Priya Sharma / Rahul Verma" oninput="sync(this)">
+            </div>
+            <div class="fgroup">
+              <label class="lbl" for="f-gender">Gender</label>
+              <select id="f-gender" data-field="gender" onchange="sync(this)">
+                <option value="">— Select —</option>
+                <option>Female / स्त्री</option>
+                <option>Male / पुरुष</option>
+              </select>
+            </div>
+            <div class="fgroup">
+              <label class="lbl" for="f-dob" data-en="Date of Birth" data-hi="जन्म तिथि">Date of Birth</label>
+              <input type="date" id="f-dob" data-field="dob" oninput="sync(this)">
+            </div>
+            <div class="fgroup">
+              <label class="lbl" for="f-tob">Time of Birth <span class="opt">(optional)</span></label>
+              <input type="time" id="f-tob" data-field="tob" oninput="sync(this)">
+            </div>
+            <div class="fgroup">
+              <label class="lbl" for="f-pob">Place of Birth</label>
+              <input type="text" id="f-pob" data-field="pob" placeholder="e.g. New Delhi, Mumbai" oninput="sync(this)">
+            </div>
+            <div class="fgroup">
+              <label class="lbl" for="f-height">Height</label>
+              <input type="text" id="f-height" data-field="height" placeholder="e.g. 5 ft 5 in / 165 cm" oninput="sync(this)">
+            </div>
+            <div class="fgroup">
+              <label class="lbl" for="f-weight">Weight <span class="opt">(optional)</span></label>
+              <input type="text" id="f-weight" data-field="weight" placeholder="e.g. 60 kg" oninput="sync(this)">
+            </div>
+            <div class="fgroup">
+              <label class="lbl" for="f-build">Build / Body Type <span class="opt">(optional)</span></label>
+              <select id="f-build" data-field="build" onchange="sync(this)">
+                <option value="">— Select —</option>
+                <option>Slim / पतले</option>
+                <option>Athletic / स्वस्थ</option>
+                <option>Average / सामान्य</option>
+                <option>Healthy / स्वस्थ-भरा</option>
+              </select>
+            </div>
+            <div class="fgroup">
+              <label class="lbl" for="f-complexion">Complexion</label>
+              <select id="f-complexion" data-field="complexion" onchange="sync(this)">
+                <option value="">— Select —</option>
+                <option>Very Fair / अति गोरा</option>
+                <option>Fair / गोरा</option>
+                <option>Wheatish / गेहुंआ</option>
+                <option>Wheatish Brown / सांवला</option>
+                <option>Dark / श्याम</option>
+              </select>
+            </div>
+            <div class="fgroup">
+              <label class="lbl" for="f-bg">Blood Group <span class="opt">(optional)</span></label>
+              <select id="f-bg" data-field="bloodGroup" onchange="sync(this)">
+                <option value="">— Select —</option>
+                <option>A+</option><option>A−</option>
+                <option>B+</option><option>B−</option>
+                <option>AB+</option><option>AB−</option>
+                <option>O+</option><option>O−</option>
+              </select>
+            </div>
+            <div class="fgroup">
+              <label class="lbl" for="f-ms">Marital Status</label>
+              <select id="f-ms" data-field="maritalStatus" onchange="sync(this)">
+                <option value="">— Select —</option>
+                <option>Unmarried / अविवाहित</option>
+                <option>Divorced / तलाकशुदा</option>
+                <option>Widowed / विधवा / विधुर</option>
+              </select>
+            </div>
+            <div class="fgroup">
+              <label class="lbl" for="f-mt">Mother Tongue</label>
+              <input type="text" id="f-mt" data-field="motherTongue" placeholder="e.g. Hindi, Marathi, Tamil" oninput="sync(this)">
+            </div>
+            <div class="fgroup s2">
+              <label class="lbl" for="f-langs">Languages Known <span class="opt">(optional)</span></label>
+              <input type="text" id="f-langs" data-field="languages" placeholder="e.g. Hindi, English, Gujarati, Tamil" oninput="sync(this)">
+            </div>
+            <div class="fgroup s2">
+              <label class="lbl" for="f-hobbies">Hobbies & Interests <span class="opt">(optional)</span></label>
+              <input type="text" id="f-hobbies" data-field="hobbies" placeholder="e.g. Reading, Cooking, Travelling, Classical Dance, Cricket" oninput="sync(this)">
+            </div>
+
+            <div class="sub-label">Lifestyle</div>
+            <div class="fgroup">
+              <label class="lbl">Diet</label>
+              <div class="lifestyle-group" id="ls-diet">
+                <div class="ls-chip active" onclick="setLifestyle('diet','Vegetarian',this)">🌿 Vegetarian</div>
+                <div class="ls-chip" onclick="setLifestyle('diet','Non-Vegetarian',this)">🍗 Non-Veg</div>
+                <div class="ls-chip" onclick="setLifestyle('diet','Eggetarian',this)">🥚 Eggetarian</div>
+                <div class="ls-chip" onclick="setLifestyle('diet','Jain',this)">🙏 Jain</div>
+              </div>
+            </div>
+            <div class="fgroup">
+              <label class="lbl">Smoking</label>
+              <div class="lifestyle-group" id="ls-smoke">
+                <div class="ls-chip active" onclick="setLifestyle('smoke','Non-Smoker',this)">✅ Non-Smoker</div>
+                <div class="ls-chip" onclick="setLifestyle('smoke','Occasionally',this)">💭 Occasionally</div>
+              </div>
+            </div>
+            <div class="fgroup">
+              <label class="lbl">Drinking</label>
+              <div class="lifestyle-group" id="ls-drink">
+                <div class="ls-chip active" onclick="setLifestyle('drink','Teetotaler',this)">✅ Teetotaler</div>
+                <div class="ls-chip" onclick="setLifestyle('drink','Occasionally',this)">💭 Occasionally</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. FAMILY & RELIGION -->
+      <div class="form-section open" id="sec-religion">
+        <div class="fsh" onclick="toggleSection(this)">
+          <div class="fsh-left">
+            <div class="fsh-icon">🏛️</div>
+            <div>
+              <div class="fsh-title" data-en="Family & Religion" data-hi="परिवार एवं धर्म">Family &amp; Religion</div>
+              <div class="fsh-sub">Religion, caste, gotra, parents, siblings, family type</div>
+            </div>
+          </div>
+          <svg class="fsh-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="fsb">
+          <div class="fg" id="religion-form">
+            <div class="fgroup">
+              <label class="lbl" for="f-rel">Religion</label>
+              <select id="f-rel" data-field="religion" onchange="sync(this);updateReligion();updateInvocByReligion(this.value)">
+                <option value="">— Select —</option>
+                <option value="hindu">Hindu / हिंदू</option>
+                <option value="muslim">Muslim / मुस्लिम</option>
+                <option value="christian">Christian / ईसाई</option>
+                <option value="sikh">Sikh / सिख</option>
+                <option value="jain">Jain / जैन</option>
+                <option value="buddhist">Buddhist / बौद्ध</option>
+                <option value="other">Other / अन्य</option>
+              </select>
+            </div>
+            <div class="fgroup">
+              <label class="lbl" for="f-caste">Caste / Community <span class="opt">(optional)</span></label>
+              <input type="text" id="f-caste" data-field="caste" placeholder="e.g. Brahmin, Rajput, Kayastha" oninput="sync(this)">
+            </div>
+            <div class="fgroup">
+              <label class="lbl" for="f-subcaste">Sub-Caste <span class="opt">(optional)</span></label>
+              <input type="text" id="f-subcaste" data-field="subcaste" placeholder="e.g. Gaur Brahmin, Sindhi Lohana" oninput="sync(this)">
+            </div>
+
+            <!-- Hindu fields -->
+            <div class="fgroup rc rh">
+              <label class="lbl" for="f-gotra">Gotra <span class="opt">(optional)</span></label>
+              <input type="text" id="f-gotra" data-field="gotra" placeholder="e.g. Bharadwaj, Kashyap, Vashishtha" oninput="sync(this)">
+            </div>
+            <div class="fgroup rc rh">
+              <label class="lbl" for="f-rashi">Rashi (Zodiac) <span class="opt">(optional)</span></label>
+              <select id="f-rashi" data-field="rashi" onchange="sync(this)">
+                <option value="">— Select —</option>
+                <option>Mesh / मेष (Aries)</option><option>Vrishabh / वृषभ (Taurus)</option>
+                <option>Mithun / मिथुन (Gemini)</option><option>Karka / कर्क (Cancer)</option>
+                <option>Simha / सिंह (Leo)</option><option>Kanya / कन्या (Virgo)</option>
+                <option>Tula / तुला (Libra)</option><option>Vrishchik / वृश्चिक (Scorpio)</option>
+                <option>Dhanu / धनु (Sagittarius)</option><option>Makar / मकर (Capricorn)</option>
+                <option>Kumbh / कुंभ (Aquarius)</option><option>Meen / मीन (Pisces)</option>
+              </select>
+            </div>
+            <div class="fgroup rc rh">
+              <label class="lbl" for="f-naks">Nakshatra <span class="opt">(optional)</span></label>
+              <select id="f-naks" data-field="nakshatra" onchange="sync(this)">
+                <option value="">— Select —</option>
+                <option>Ashwini</option><option>Bharani</option><option>Krittika</option>
+                <option>Rohini</option><option>Mrigashira</option><option>Ardra</option>
+                <option>Punarvasu</option><option>Pushya</option><option>Ashlesha</option>
+                <option>Magha</option><option>Purva Phalguni</option><option>Uttara Phalguni</option>
+                <option>Hasta</option><option>Chitra</option><option>Swati</option>
+                <option>Vishakha</option><option>Anuradha</option><option>Jyeshtha</option>
+                <option>Mula</option><option>Purva Ashadha</option><option>Uttara Ashadha</option>
+                <option>Shravana</option><option>Dhanistha</option><option>Shatabhisha</option>
+                <option>Purva Bhadra</option><option>Uttara Bhadra</option><option>Revati</option>
+              </select>
+            </div>
+            <div class="fgroup rc rh">
+              <label class="lbl" for="f-mang">Manglik Status <span class="opt">(optional)</span></label>
+              <select id="f-mang" data-field="manglik" onchange="sync(this)">
+                <option value="">— Select —</option>
+                <option>Non-Manglik / अमांगलिक</option>
+                <option>Manglik / मांगलिक</option>
+                <option>Partial Manglik / अंशिक मांगलिक</option>
+              </select>
+            </div>
+            <div class="fgroup rc rh">
+              <label class="lbl" for="f-charan">Charan / Pada <span class="opt">(optional)</span></label>
+              <input type="text" id="f-charan" data-field="charan" placeholder="e.g. 1st Pada, 3rd Charan" oninput="sync(this)">
+            </div>
+            <div class="fgroup rc rh">
+              <label class="lbl" for="f-gan">Gan / Yoni <span class="opt">(optional)</span></label>
+              <input type="text" id="f-gan" data-field="gan" placeholder="e.g. Dev Gan, Manushya Yoni" oninput="sync(this)">
+            </div>
+
+            <!-- Family -->
+            <div class="sub-label">Family Details</div>
+            <div class="fgroup">
+              <label class="lbl" for="f-fn">Father's Name</label>
+              <input type="text" id="f-fn" data-field="fatherName" placeholder="e.g. Sh. Ramesh Sharma" oninput="sync(this)">
+            </div>
+            <div class="fgroup">
+              <label class="lbl" for="f-fo">Father's Occupation</label>
+              <input type="text" id="f-fo" data-field="fatherOcc" placeholder="e.g. Govt. Employee, Business" oninput="sync(this)">
+            </div>
+            <div class="fgroup">
+              <label class="lbl" for="f-mn">Mother's Name</label>
+              <input type="text" id="f-mn" data-field="motherName" placeholder="e.g. Smt. Sunita Sharma" oninput="sync(this)">
+            </div>
+            <div class="fgroup">
+              <label class="lbl" for="f-mo">Mother's Occupation</label>
+              <input type="text" id="f-mo" data-field="motherOcc" placeholder="e.g. Homemaker, Teacher" oninput="sync(this)">
+            </div>
+            <div class="fgroup">
+              <label class="lbl" for="f-ftype">Family Type</label>
+              <select id="f-ftype" data-field="familyType" onchange="sync(this)">
+                <option value="">— Select —</option>
+                <option>Joint Family / संयुक्त परिवार</option>
+                <option>Nuclear Family / एकल परिवार</option>
+                <option>Semi-Joint Family</option>
+              </select>
+            </div>
+            <div class="fgroup">
+              <label class="lbl" for="f-fstatus">Family Status <span class="opt">(optional)</span></label>
+              <select id="f-fstatus" data-field="familyStatus" onchange="sync(this)">
+                <option value="">— Select —</option>
+                <option>Middle Class / मध्यम वर्ग</option>
+                <option>Upper Middle Class</option>
+                <option>Upper Class / उच्च वर्ग</option>
+                <option>Rich / संपन्न</option>
+              </select>
+            </div>
+            <div class="fgroup">
+              <label class="lbl" for="f-native">Native Place / Ancestral Village <span class="opt">(optional)</span></label>
+              <input type="text" id="f-native" data-field="nativePlace" placeholder="e.g. Mathura UP, Bikaner Raj" oninput="sync(this)">
+            </div>
+            <div class="fgroup">
+              <label class="lbl" for="f-nri">NRI Status <span class="opt">(optional)</span></label>
+              <select id="f-nri" data-field="nriStatus" onchange="sync(this)">
+                <option value="">— Not Applicable —</option>
+                <option>NRI — USA</option>
+                <option>NRI — UK</option>
+                <option>NRI — Canada</option>
+                <option>NRI — Australia</option>
+                <option>NRI — UAE / Gulf</option>
+                <option>NRI — Singapore</option>
+                <option>NRI — Other</option>
+              </select>
+            </div>
+            <div class="fgroup s2">
+              <label class="lbl">Siblings <span class="opt">(optional)</span></label>
+              <div class="siblings-list" id="sib-list"></div>
+              <button type="button" class="btn-add-sib" onclick="addSibling()">+ Add Sibling</button>
+            </div>
+            <div class="fgroup s2">
+              <label class="lbl" for="f-mamaname">Maternal Uncle (Mama) <span class="opt">(optional)</span></label>
+              <input type="text" id="f-mamaname" data-field="mamaName" placeholder="e.g. Sh. Suresh Gupta, Delhi" oninput="sync(this)">
+            </div>
+            <div class="fgroup s2">
+              <label class="lbl" for="f-familynote">Family Background Note <span class="opt">(optional)</span></label>
+              <textarea id="f-familynote" data-field="familyNote" rows="2" placeholder="e.g. A respected and well-established family from Delhi, father is a senior engineer..." oninput="sync(this)"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. EDUCATION & CAREER -->
+      <div class="form-section open" id="sec-edu">
+        <div class="fsh" onclick="toggleSection(this)">
+          <div class="fsh-left">
+            <div class="fsh-icon">🎓</div>
+            <div>
+              <div class="fsh-title" data-en="Education & Career" data-hi="शिक्षा एवं करियर">Education &amp; Career</div>
+              <div class="fsh-sub">Qualification, job, income, work location</div>
+            </div>
+          </div>
+          <svg class="fsh-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="fsb">
+          <div class="fg">
+            <div class="fgroup s2">
+              <label class="lbl" for="f-edu">Highest Qualification</label>
+              <input type="text" id="f-edu" data-field="education" placeholder="e.g. B.Tech IIT Delhi / MBBS AIIMS / CA / MBA" oninput="sync(this)">
+            </div>
+            <div class="fgroup s2">
+              <label class="lbl" for="f-edudetail">Additional Qualifications <span class="opt">(optional)</span></label>
+              <input type="text" id="f-edudetail" data-field="eduDetail" placeholder="e.g. M.Tech, PG Diploma in Finance" oninput="sync(this)">
+            </div>
+            <div class="fgroup">
+              <label class="lbl" for="f-occ">Occupation</label>
+              <input type="text" id="f-occ" data-field="occupation" placeholder="e.g. Software Engineer, Doctor" oninput="sync(this)">
+            </div>
+            <div class="fgroup">
+              <label class="lbl" for="f-comp">Company / Organisation <span class="opt">(optional)</span></label>
+              <input type="text" id="f-comp" data-field="company" placeholder="e.g. Google, AIIMS, Self-employed" oninput="sync(this)">
+            </div>
+            <div class="fgroup">
+              <label class="lbl" for="f-income">Annual Income <span class="opt">(optional)</span></label>
+              <input type="text" id="f-income" data-field="income" placeholder="e.g. ₹8 LPA, ₹15-20 LPA, $120K" oninput="sync(this)">
+            </div>
+            <div class="fgroup">
+              <label class="lbl" for="f-workcity">Work Location <span class="opt">(optional)</span></label>
+              <input type="text" id="f-workcity" data-field="workCity" placeholder="e.g. Bangalore, Mumbai, London" oninput="sync(this)">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. CONTACT -->
+      <div class="form-section" id="sec-contact">
+        <div class="fsh" onclick="toggleSection(this)">
+          <div class="fsh-left">
+            <div class="fsh-icon">📞</div>
+            <div>
+              <div class="fsh-title" data-en="Contact Details" data-hi="संपर्क विवरण">Contact Details</div>
+              <div class="fsh-sub">City, mobile, email, address</div>
+            </div>
+          </div>
+          <svg class="fsh-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="fsb">
+          <div class="fg">
+            <div class="fgroup">
+              <label class="lbl" for="f-city">City</label>
+              <input type="text" id="f-city" data-field="city" placeholder="e.g. New Delhi" oninput="sync(this)">
+            </div>
+            <div class="fgroup">
+              <label class="lbl" for="f-state">State</label>
+              <select id="f-state" data-field="state" onchange="sync(this)">
+                <option value="">— Select State —</option>
+                <option>Andhra Pradesh</option><option>Assam</option><option>Bihar</option>
+                <option>Chhattisgarh</option><option>Delhi</option><option>Goa</option>
+                <option>Gujarat</option><option>Haryana</option><option>Himachal Pradesh</option>
+                <option>Jharkhand</option><option>Karnataka</option><option>Kerala</option>
+                <option>Madhya Pradesh</option><option>Maharashtra</option><option>Manipur</option>
+                <option>Meghalaya</option><option>Odisha</option><option>Punjab</option>
+                <option>Rajasthan</option><option>Tamil Nadu</option><option>Telangana</option>
+                <option>Uttar Pradesh</option><option>Uttarakhand</option><option>West Bengal</option>
+                <option>Outside India (NRI)</option>
+              </select>
+            </div>
+            <div class="fgroup">
+              <label class="lbl" for="f-mobile">Mobile Number</label>
+              <input type="tel" id="f-mobile" data-field="mobile" placeholder="e.g. +91 98765 43210" oninput="sync(this)">
+            </div>
+            <div class="fgroup">
+              <label class="lbl" for="f-wa">WhatsApp <span class="opt">(if different)</span></label>
+              <input type="tel" id="f-wa" data-field="whatsapp" placeholder="e.g. +91 98765 43210" oninput="sync(this)">
+            </div>
+            <div class="fgroup s2">
+              <label class="lbl" for="f-email">Email Address <span class="opt">(optional)</span></label>
+              <input type="email" id="f-email" data-field="email" placeholder="e.g. priya@gmail.com" oninput="sync(this)">
+            </div>
+            <div class="fgroup s2">
+              <label class="lbl" for="f-addr">Address <span class="opt">(optional)</span></label>
+              <textarea id="f-addr" data-field="address" rows="2" placeholder="House no., street, area, city, pincode..." oninput="sync(this)"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. ABOUT -->
+      <div class="form-section" id="sec-about">
+        <div class="fsh" onclick="toggleSection(this)">
+          <div class="fsh-left">
+            <div class="fsh-icon">💬</div>
+            <div>
+              <div class="fsh-title">About Me &amp; Preferences <span class="opt" style="text-transform:none;font-size:.76rem">(optional)</span></div>
+              <div class="fsh-sub">Personal intro and partner expectations</div>
+            </div>
+          </div>
+          <svg class="fsh-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="fsb">
+          <div class="fg c1">
+            <div class="fgroup">
+              <label class="lbl" for="f-about">About Me</label>
+              <textarea id="f-about" data-field="aboutMe" rows="3" placeholder="A short personal introduction — personality, values, what you enjoy, what makes you unique..." oninput="sync(this)"></textarea>
+            </div>
+            <div class="fgroup">
+              <label class="lbl" for="f-pref">Partner Preferences</label>
+              <textarea id="f-pref" data-field="partnerPref" rows="3" placeholder="What you look for in a life partner — values, personality, education, location preferences..." oninput="sync(this)"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /form-panel -->
+
+    <!-- ======= PREVIEW PANEL ======= -->
+    <div class="preview-panel">
+      <div class="preview-controls">
+        <div class="pc-label">Choose Template</div>
+        <div class="tpl-pills">
+          <button class="tpl-pill active" onclick="setTemplate('t-m',null,this)">🏵️ Marigold</button>
+          <button class="tpl-pill" onclick="setTemplate('t-n',null,this)">💼 Navy</button>
+          <button class="tpl-pill" onclick="setTemplate('t-r',null,this)">🌸 Rose</button>
+          <button class="tpl-pill" onclick="setTemplate('t-s',null,this)">🧡 Saffron</button>
+          <button class="tpl-pill" onclick="setTemplate('t-p',null,this)">🦚 Peacock</button>
+          <button class="tpl-pill" onclick="setTemplate('t-x',null,this)">🌙 Midnight</button>
+        </div>
+      </div>
+
+      <div class="biodata-wrapper">
+        <div class="biodata-scaler" id="biodata-scaler">
+          <!-- BIODATA CARD — CSS handles all 6 templates -->
+          <div id="biodata-card" class="t-m">
+
+            <!-- INVOCATION (top banner) -->
+            <div class="bc-invoc" id="pv-invoc">ॐ श्री गणेशाय नमः</div>
+
+            <!-- HEADER -->
+            <div class="bc-header">
+              <div class="bc-head-inner">
+                <div class="bc-photo" id="pv-photo-wrap">
+                  <img id="pv-photo" alt="" style="display:none;width:100%;height:100%;object-fit:cover">
+                  <span class="bc-photo-ph" id="pv-photo-ph">👤</span>
+                </div>
+                <div class="bc-name-block">
+                  <div class="bc-name" id="pv-name">Your Full Name</div>
+                  <div class="bc-subt" id="pv-subt">Religion · Community · City</div>
+                </div>
+              </div>
+              <div class="bc-gold-bar" id="pv-gold-bar"></div>
+              <div class="bc-accent" id="pv-accent"></div>
+              <div class="bc-acc-bar" id="pv-acc-bar" style="display:none"></div>
+              <div class="bc-floral-div" id="pv-floral">❧ ❧ ❧</div>
+            </div>
+
+            <!-- BODY -->
+            <div class="bc-body">
+
+              <!-- Personal -->
+              <div class="bc-sec">
+                <div class="bc-sec-title">Personal Details</div>
+                <div class="bc-grid">
+                  <div class="bc-field"><span class="bc-lbl">Date of Birth</span><span class="bc-val" id="pv-dob">—</span></div>
+                  <div class="bc-field"><span class="bc-lbl">Time of Birth</span><span class="bc-val" id="pv-tob">—</span></div>
+                  <div class="bc-field"><span class="bc-lbl">Place of Birth</span><span class="bc-val" id="pv-pob">—</span></div>
+                  <div class="bc-field"><span class="bc-lbl">Height / Weight</span><span class="bc-val" id="pv-hw">—</span></div>
+                  <div class="bc-field" id="pv-build-row"><span class="bc-lbl">Build</span><span class="bc-val" id="pv-build">—</span></div>
+                  <div class="bc-field"><span class="bc-lbl">Complexion</span><span class="bc-val" id="pv-comp">—</span></div>
+                  <div class="bc-field"><span class="bc-lbl">Blood Group</span><span class="bc-val" id="pv-bg">—</span></div>
+                  <div class="bc-field"><span class="bc-lbl">Marital Status</span><span class="bc-val" id="pv-ms">—</span></div>
+                  <div class="bc-field"><span class="bc-lbl">Mother Tongue</span><span class="bc-val" id="pv-mtongue">—</span></div>
+                  <div class="bc-field" id="pv-langs-row"><span class="bc-lbl">Languages</span><span class="bc-val" id="pv-langs">—</span></div>
+                  <div class="bc-field" id="pv-lifestyle-row" style="display:none"><span class="bc-lbl">Lifestyle</span><span class="bc-val" id="pv-lifestyle">—</span></div>
+                  <div class="bc-field full" id="pv-hobbies-row" style="display:none"><span class="bc-lbl">Hobbies</span><span class="bc-val" id="pv-hobbies">—</span></div>
+                </div>
+              </div>
+
+              <!-- Religion -->
+              <div class="bc-sec" id="pv-sec-rel">
+                <div class="bc-sec-title">Religious Details</div>
+                <div class="bc-grid">
+                  <div class="bc-field"><span class="bc-lbl">Religion</span><span class="bc-val" id="pv-rel">—</span></div>
+                  <div class="bc-field"><span class="bc-lbl">Caste / Community</span><span class="bc-val" id="pv-caste">—</span></div>
+                  <div class="bc-field" id="pv-f-gotra"><span class="bc-lbl">Gotra</span><span class="bc-val" id="pv-gotra">—</span></div>
+                  <div class="bc-field" id="pv-f-rashi"><span class="bc-lbl">Rashi</span><span class="bc-val" id="pv-rashi">—</span></div>
+                  <div class="bc-field" id="pv-f-naks"><span class="bc-lbl">Nakshatra</span><span class="bc-val" id="pv-naks">—</span></div>
+                  <div class="bc-field" id="pv-f-mang"><span class="bc-lbl">Manglik</span><span class="bc-val" id="pv-mang">—</span></div>
+                </div>
+              </div>
+
+              <!-- Education -->
+              <div class="bc-sec">
+                <div class="bc-sec-title">Education &amp; Career</div>
+                <div class="bc-grid">
+                  <div class="bc-field full"><span class="bc-lbl">Education</span><span class="bc-val" id="pv-edu">—</span></div>
+                  <div class="bc-field"><span class="bc-lbl">Occupation</span><span class="bc-val" id="pv-occ">—</span></div>
+                  <div class="bc-field"><span class="bc-lbl">Company</span><span class="bc-val" id="pv-comp2">—</span></div>
+                  <div class="bc-field"><span class="bc-lbl">Annual Income</span><span class="bc-val" id="pv-income">—</span></div>
+                  <div class="bc-field"><span class="bc-lbl">Work Location</span><span class="bc-val" id="pv-workcity">—</span></div>
+                </div>
+              </div>
+
+              <!-- Family -->
+              <div class="bc-sec">
+                <div class="bc-sec-title">Family Details</div>
+                <div class="bc-grid">
+                  <div class="bc-field"><span class="bc-lbl">Father's Name</span><span class="bc-val" id="pv-fn">—</span></div>
+                  <div class="bc-field"><span class="bc-lbl">Father's Occ.</span><span class="bc-val" id="pv-fo">—</span></div>
+                  <div class="bc-field"><span class="bc-lbl">Mother's Name</span><span class="bc-val" id="pv-mn">—</span></div>
+                  <div class="bc-field"><span class="bc-lbl">Mother's Occ.</span><span class="bc-val" id="pv-mo">—</span></div>
+                  <div class="bc-field" id="pv-ftype-row"><span class="bc-lbl">Family Type</span><span class="bc-val" id="pv-ftype">—</span></div>
+                  <div class="bc-field" id="pv-fstatus-row"><span class="bc-lbl">Family Status</span><span class="bc-val" id="pv-fstatus">—</span></div>
+                  <div class="bc-field" id="pv-native-row"><span class="bc-lbl">Native Place</span><span class="bc-val" id="pv-native">—</span></div>
+                  <div class="bc-field" id="pv-nri-row"><span class="bc-lbl">NRI Status</span><span class="bc-val" id="pv-nri">—</span></div>
+                  <div class="bc-field full" id="pv-sib-row" style="display:none"><span class="bc-lbl">Siblings</span><span class="bc-val" id="pv-sibs">—</span></div>
+                  <div class="bc-field full" id="pv-mama-row" style="display:none"><span class="bc-lbl">Mama (M.Uncle)</span><span class="bc-val" id="pv-mama">—</span></div>
+                  <div class="bc-field full" id="pv-fnote-row" style="display:none"><span class="bc-lbl">Family Note</span><span class="bc-val" id="pv-fnote" style="white-space:pre-wrap;line-height:1.5"></span></div>
+                </div>
+              </div>
+
+              <!-- Contact -->
+              <div class="bc-sec">
+                <div class="bc-sec-title">Contact Details</div>
+                <div class="bc-grid">
+                  <div class="bc-field"><span class="bc-lbl">City / State</span><span class="bc-val" id="pv-city">—</span></div>
+                  <div class="bc-field"><span class="bc-lbl">Mobile</span><span class="bc-val" id="pv-mob">—</span></div>
+                  <div class="bc-field" id="pv-wa-row"><span class="bc-lbl">WhatsApp</span><span class="bc-val" id="pv-wa">—</span></div>
+                  <div class="bc-field" id="pv-em-row"><span class="bc-lbl">Email</span><span class="bc-val" id="pv-email">—</span></div>
+                  <div class="bc-field full" id="pv-addr-row" style="display:none"><span class="bc-lbl">Address</span><span class="bc-val" id="pv-addr" style="white-space:pre-wrap;line-height:1.5"></span></div>
+                </div>
+              </div>
+
+              <!-- About -->
+              <div class="bc-sec" id="pv-about-sec" style="display:none">
+                <div class="bc-sec-title">About Me &amp; Preferences</div>
+                <div class="bc-grid">
+                  <div class="bc-field full" id="pv-about-row" style="display:none"><span class="bc-lbl">About Me</span><span class="bc-val" id="pv-about" style="white-space:pre-wrap;line-height:1.5"></span></div>
+                  <div class="bc-field full" id="pv-pref-row" style="display:none"><span class="bc-lbl">Partner Pref.</span><span class="bc-val" id="pv-pref" style="white-space:pre-wrap;line-height:1.5"></span></div>
+                </div>
+              </div>
+
+            </div><!-- /bc-body -->
+
+            <div class="bc-footer">
+              <span class="bc-footer-text" id="pv-footer">Created with VivahBiodata.in · All information is confidential</span>
+            </div>
+          </div><!-- /biodata-card -->
+        </div>
+      </div><!-- /biodata-wrapper -->
+
+      <div class="dl-actions">
+        <button class="btn-dl btn-dl-pdf" id="btn-pdf" onclick="downloadPDF()">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/></svg>
+          Download PDF (High Quality)
+        </button>
+        <button class="btn-dl btn-dl-png" id="btn-png" onclick="downloadPNG()">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21,15 16,10 5,21"/></svg>
+          Download as PNG Image
+        </button>
+        <button class="btn-clear-form" onclick="clearAll()">🗑️ Clear all fields</button>
+        <div class="privacy-badge">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Your data never leaves this browser. Zero servers involved.
+        </div>
+      </div>
+    </div><!-- /preview-panel -->
+  </div><!-- /builder-layout -->
+</div>
+</section>
+
+<!-- ============================= FEATURES ============================= -->
+<section class="features">
+  <div class="features-inner">
+    <p class="sec-kicker" style="color:var(--g2);text-align:center">Why VivahBiodata</p>
+    <h2 class="sec-title" style="color:var(--wh);text-align:center">Built for <em style="color:var(--g2)">every Indian</em> wedding</h2>
+    <div class="features-grid">
+      <div class="feat-card">
+        <div class="feat-icon">🙏</div>
+        <div class="feat-title">Religious Invocations</div>
+        <div class="feat-desc">ॐ Ganesh, Bismillah, Holy Cross, Waheguru Ji, Jai Jinendra — 12+ presets for all faiths. Custom text too.</div>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">✂️</div>
+        <div class="feat-title">Smart Photo Crop</div>
+        <div class="feat-desc">Upload any photo — a circular crop tool opens instantly. Drag, pinch-to-zoom, perfect every time.</div>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">🎨</div>
+        <div class="feat-title">6 Premium Templates</div>
+        <div class="feat-desc">Marigold, Navy, Rose, Saffron Royal, Peacock Emerald, Midnight Luxe. Switch anytime, preview live.</div>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">📋</div>
+        <div class="feat-title">Comprehensive Form</div>
+        <div class="feat-desc">Gotra, Rashi, 27 Nakshatras, Manglik, family type, native place, NRI status, hobbies, lifestyle & more.</div>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">🔒</div>
+        <div class="feat-title">100% Private</div>
+        <div class="feat-desc">No server, no database, no cookies, no tracking. Everything runs in your browser. Data dies when tab closes.</div>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">📄</div>
+        <div class="feat-title">High-Quality PDF</div>
+        <div class="feat-desc">Crystal-clear A4 PDF at 2× resolution. No watermarks. No limits. Print-ready, share-ready instantly.</div>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">🌐</div>
+        <div class="feat-title">Hindi &amp; English</div>
+        <div class="feat-desc">Toggle the entire interface between Hindi and English with one click. Works on all devices.</div>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">⚡</div>
+        <div class="feat-title">Instant Preview</div>
+        <div class="feat-desc">Every keystroke updates the live preview. No page reload, no lag. What you see is what you get.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= FAQ ============================= -->
+<section class="faq-section" id="faq">
+  <div class="faq-inner">
+    <p class="sec-kicker">FAQ</p>
+    <h2 class="sec-title">Common Questions</h2>
+    <div class="faq-list">
+      <div class="faq-item open">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Is VivahBiodata completely free?
+          <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="faq-a">Yes, 100% free forever. No hidden fees, no premium plans, no subscription. Create unlimited biodatas, download unlimited PDFs — always free. No credit card, no signup.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Does my data get stored anywhere?
+          <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="faq-a">Absolutely not. Everything runs 100% in your browser. Your form data, your photo, and the generated biodata never leave your device. No servers. No database. Close the tab and everything is gone — by design.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Can I add "Shree Ganeshay Namah" or other religious invocations?
+          <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="faq-a">Yes! This is one of our most loved features. We have 12+ presets: Hindu (ॐ श्री गणेशाय नमः, ॐ नमः शिवाय, श्री राम जय राम, जय माता दी, etc.), Muslim (Bismillah), Christian (Holy Trinity), Sikh (Waheguru), Jain (णमो अरिहंताणं), and a custom text option for any other invocation.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          How does the photo crop tool work?
+          <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="faq-a">Simply click the photo section and upload any image. A crop modal pops up automatically showing a circular frame. Drag the image to reposition your face, use the zoom slider (or pinch on mobile) to scale. Click "Apply Photo" and the perfect circular photo appears in your biodata instantly.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Which template should I choose?
+          <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="faq-a">All 6 are beautiful — choose based on your preference: Marigold (traditional Hindu), Navy (modern professional), Rose (feminine/elegant), Saffron Royal (palatial/heritage), Peacock Emerald (exotic/distinctive), Midnight Luxe (dark/luxury). You can switch anytime without losing your data.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Can I use this on my mobile phone?
+          <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="faq-a">Yes, fully mobile-responsive. The form, photo cropper, preview, and PDF download all work on Android and iPhone. The crop tool even supports pinch-to-zoom on touchscreens.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          What fields does the biodata include?
+          <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="faq-a">A very comprehensive set: Name, DOB, time/place of birth, height, weight, build, complexion, blood group, marital status, mother tongue, languages, hobbies, lifestyle (diet/smoke/drink), religion, caste, sub-caste, gotra, 27 nakshatras, rashi, manglik, charan, education, occupation, income, work city, parents, siblings, family type (joint/nuclear), family status, native place, NRI status, maternal uncle, contact details, and about me + partner preferences.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= FOOTER ============================= -->
+<footer>
+  <div class="footer-brand">VivahBiodata</div>
+  <div class="footer-sub">India's most complete free marriage biodata maker · No signup · 6 templates · All religions</div>
+  <div class="footer-links">
+    <a href="#templates">Templates</a>
+    <a href="#builder">Create Biodata</a>
+    <a href="about.html">About</a>
+    <a href="#faq">FAQ</a>
+  </div>
+  <div class="footer-copy">© 2025 VivahBiodata.in · Made with ❤️ for Indian families · Your data never leaves your device</div>
+</footer>
+
+<div id="toast"></div>
+
+<script>
+// ========== STATE ==========
+const D = {
+  invocation:'ॐ श्री गणेशाय नमः',
+  name:'',gender:'',dob:'',tob:'',pob:'',
+  height:'',weight:'',build:'',complexion:'',bloodGroup:'',
+  maritalStatus:'',motherTongue:'',languages:'',hobbies:'',
+  diet:'Vegetarian',smoke:'Non-Smoker',drink:'Teetotaler',
+  religion:'',caste:'',subcaste:'',gotra:'',rashi:'',nakshatra:'',manglik:'',charan:'',gan:'',
+  fatherName:'',fatherOcc:'',motherName:'',motherOcc:'',
+  familyType:'',familyStatus:'',nativePlace:'',nriStatus:'',
+  siblings:[],mamaName:'',familyNote:'',
+  education:'',eduDetail:'',occupation:'',company:'',income:'',workCity:'',
+  city:'',state:'',mobile:'',whatsapp:'',email:'',address:'',
+  aboutMe:'',partnerPref:'',
+  photo:null
+};
+
+let currentTemplate = 't-m';
+let currentLang = 'en';
+
+// ========== SYNC & RENDER ==========
+function sync(el){
+  const field = el.dataset.field;
+  if(field) D[field] = el.value;
+  render();
+}
+
+function render(){
+  const card = document.getElementById('biodata-card');
+
+  // Invocation
+  const inv = document.getElementById('pv-invoc');
+  if(D.invocation){inv.textContent=D.invocation;inv.style.display='block';}
+  else{inv.style.display='none';}
+
+  // Photo
+  const pvPhoto = document.getElementById('pv-photo');
+  const pvPh = document.getElementById('pv-photo-ph');
+  if(D.photo){pvPhoto.src=D.photo;pvPhoto.style.display='block';pvPh.style.display='none';}
+  else{pvPhoto.style.display='none';pvPh.style.display='block';}
+
+  // Name & subt
+  v('pv-name', D.name || 'Your Full Name');
+  const subtParts = [D.religion, D.caste, [D.city,D.state].filter(Boolean).join(', ')].filter(Boolean);
+  v('pv-subt', subtParts.join(' · ') || 'Religion · Community · City');
+
+  // Personal
+  v('pv-dob', fmtDate(D.dob));
+  v('pv-tob', D.tob || '—');
+  v('pv-pob', D.pob || '—');
+  v('pv-hw', [D.height, D.weight].filter(Boolean).join(' · ') || '—');
+  sv('pv-build','pv-build-row', D.build);
+  v('pv-comp', D.complexion || '—');
+  v('pv-bg', D.bloodGroup || '—');
+  v('pv-ms', D.maritalStatus || '—');
+  v('pv-mtongue', D.motherTongue || '—');
+  sv('pv-langs','pv-langs-row', D.languages);
+  sv('pv-hobbies','pv-hobbies-row', D.hobbies);
+
+  // Lifestyle
+  const lifeParts = [D.diet, D.smoke, D.drink].filter(x=>x&&x!=='');
+  const lsRow = document.getElementById('pv-lifestyle-row');
+  if(lifeParts.length){
+    v('pv-lifestyle', lifeParts.join(' · '));
+    lsRow.style.display='flex';
+  } else { lsRow.style.display='none'; }
+
+  // Religion
+  v('pv-rel', D.religion || '—');
+  v('pv-caste', [D.caste, D.subcaste].filter(Boolean).join(', ') || '—');
+  sv('pv-gotra','pv-f-gotra', D.gotra);
+  sv('pv-rashi','pv-f-rashi', D.rashi);
+  sv('pv-naks','pv-f-naks', D.nakshatra);
+  sv('pv-mang','pv-f-mang', D.manglik);
+
+  // Education
+  v('pv-edu', [D.education,D.eduDetail].filter(Boolean).join(', ') || '—');
+  v('pv-occ', D.occupation || '—');
+  v('pv-comp2', D.company || '—');
+  v('pv-income', D.income || '—');
+  v('pv-workcity', D.workCity || '—');
+
+  // Family
+  v('pv-fn', D.fatherName || '—');
+  v('pv-fo', D.fatherOcc || '—');
+  v('pv-mn', D.motherName || '—');
+  v('pv-mo', D.motherOcc || '—');
+  sv('pv-ftype','pv-ftype-row', D.familyType);
+  sv('pv-fstatus','pv-fstatus-row', D.familyStatus);
+  sv('pv-native','pv-native-row', D.nativePlace);
+  sv('pv-nri','pv-nri-row', D.nriStatus);
+
+  // Siblings
+  const sibRow = document.getElementById('pv-sib-row');
+  if(D.siblings.length){
+    const sibText = D.siblings.map(s=>[s.name,s.occ].filter(Boolean).join(', ')).filter(Boolean).join(' | ');
+    v('pv-sibs', sibText || '—');
+    sibRow.style.display='flex';
+  } else { sibRow.style.display='none'; }
+
+  sv('pv-mama','pv-mama-row', D.mamaName);
+  sv('pv-fnote','pv-fnote-row', D.familyNote);
+
+  // Contact
+  v('pv-city', [D.city,D.state].filter(Boolean).join(', ') || '—');
+  v('pv-mob', D.mobile || '—');
+  sv('pv-wa','pv-wa-row', D.whatsapp);
+  sv('pv-email','pv-em-row', D.email);
+  const addrRow = document.getElementById('pv-addr-row');
+  if(D.address){v('pv-addr',D.address);addrRow.style.display='flex';}
+  else{addrRow.style.display='none';}
+
+  // About
+  const aboutSec = document.getElementById('pv-about-sec');
+  const aboutRow = document.getElementById('pv-about-row');
+  const prefRow = document.getElementById('pv-pref-row');
+  const hasAbout = D.aboutMe || D.partnerPref;
+  aboutSec.style.display = hasAbout ? 'block' : 'none';
+  if(D.aboutMe){v('pv-about',D.aboutMe);aboutRow.style.display='flex';}
+  else{aboutRow.style.display='none';}
+  if(D.partnerPref){v('pv-pref',D.partnerPref);prefRow.style.display='flex';}
+  else{prefRow.style.display='none';}
+
+  // Template-specific decorators
+  const goldBar = document.getElementById('pv-gold-bar');
+  const accent = document.getElementById('pv-accent');
+  const accBar = document.getElementById('pv-acc-bar');
+  const floral = document.getElementById('pv-floral');
+  goldBar.style.display = (currentTemplate==='t-m'||currentTemplate==='t-s') ? 'block' : 'none';
+  accent.style.display = currentTemplate==='t-n' ? 'block' : 'none';
+  accBar.style.display = currentTemplate==='t-p' ? 'block' : 'none';
+  floral.style.display = currentTemplate==='t-r' ? 'block' : 'none';
+
+  scaleCard();
+}
+
+function v(id, text){ const el=document.getElementById(id); if(el) el.textContent=text||''; }
+function sv(valId, rowId, val){
+  const el=document.getElementById(valId);
+  const row=document.getElementById(rowId);
+  if(el) el.textContent = val||'—';
+  if(row) row.style.display = val ? 'flex' : 'none';
+}
+function fmtDate(d){
+  if(!d) return '—';
+  try{
+    const dt=new Date(d+'T00:00:00');
+    return dt.toLocaleDateString('en-IN',{day:'2-digit',month:'long',year:'numeric'});
+  }catch(e){return d;}
+}
+
+// ========== SCALE CARD ==========
+function scaleCard(){
+  const scaler = document.getElementById('biodata-scaler');
+  const card = document.getElementById('biodata-card');
+  const w = scaler.clientWidth;
+  const scale = w/595;
+  card.style.transform = `scale(${scale})`;
+  card.style.width = '595px';
+  scaler.style.height = (card.scrollHeight * scale) + 'px';
+}
+window.addEventListener('resize', scaleCard);
+
+// ========== TEMPLATE SWITCHING ==========
+function setTemplate(tpl, cardEl, pillEl){
+  currentTemplate = tpl;
+  const card = document.getElementById('biodata-card');
+  card.className = tpl;
+
+  // Sync showcase cards
+  document.querySelectorAll('.tpl-card').forEach(c=>c.classList.remove('active'));
+  if(cardEl) cardEl.classList.add('active');
+
+  // Sync pills
+  document.querySelectorAll('.tpl-pill').forEach(p=>p.classList.remove('active'));
+  if(pillEl) pillEl.classList.add('active');
+  else{
+    document.querySelectorAll('.tpl-pill').forEach(p=>{
+      if(p.onclick&&p.onclick.toString().includes(tpl)) p.classList.add('active');
+    });
+  }
+  render();
+}
+
+// ========== INVOCATION ==========
+function setInvoc(el, text){
+  document.querySelectorAll('.inv-preset').forEach(p=>p.classList.remove('active'));
+  el.classList.add('active');
+  D.invocation = text;
+  document.getElementById('f-invoc-custom').value = text;
+  render();
+}
+function setInvocCustom(text){
+  document.querySelectorAll('.inv-preset').forEach(p=>p.classList.remove('active'));
+  D.invocation = text;
+  render();
+}
+function updateInvocByReligion(rel){
+  const presets = {
+    hindu:'ॐ श्री गणेशाय नमः',
+    muslim:'بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ',
+    christian:'In the Name of the Father, the Son & the Holy Spirit',
+    sikh:'ੴ ਸਤਿ ਨਾਮੁ — Waheguru',
+    jain:'॥ णमो अरिहंताणं ॥',
+    buddhist:'नमो तस्स भगवतो अरहतो सम्मासम्बुद्धस्स',
+  };
+  if(rel && presets[rel]){
+    D.invocation = presets[rel];
+    document.getElementById('f-invoc-custom').value = presets[rel];
+    document.querySelectorAll('.inv-preset').forEach(p=>{
+      p.classList.toggle('active', p.textContent.trim()===presets[rel]);
+    });
+    render();
+  }
+}
+
+// ========== RELIGION CONDITIONAL ==========
+function updateReligion(){
+  const rel = document.getElementById('f-rel').value;
+  const form = document.getElementById('religion-form');
+  form.className = 'fg religion-' + (rel||'');
+}
+
+// ========== LIFESTYLE CHIPS ==========
+function setLifestyle(type, val, el){
+  D[type] = val;
+  const group = el.closest('.lifestyle-group');
+  group.querySelectorAll('.ls-chip').forEach(c=>c.classList.remove('active'));
+  el.classList.add('active');
+  render();
+}
+
+// ========== SIBLINGS ==========
+let sibCount = 0;
+function addSibling(){
+  const id = sibCount++;
+  const list = document.getElementById('sib-list');
+  const row = document.createElement('div');
+  row.className = 'sib-row';
+  row.dataset.sibid = id;
+  row.innerHTML = `
+    <input type="text" placeholder="Name e.g. Rahul" oninput="updateSib(${id},'name',this.value)" style="padding:8px 12px;border:1.5px solid var(--gl);border-radius:8px;font-family:var(--fu);font-size:.84rem;width:100%">
+    <input type="text" placeholder="Profession / Status" oninput="updateSib(${id},'occ',this.value)" style="padding:8px 12px;border:1.5px solid var(--gl);border-radius:8px;font-family:var(--fu);font-size:.84rem;width:100%">
+    <button class="btn-rm" onclick="removeSib(${id})">×</button>
+  `;
+  list.appendChild(row);
+  D.siblings.push({id,name:'',occ:''});
+}
+function updateSib(id,field,val){
+  const sib = D.siblings.find(s=>s.id===id);
+  if(sib) sib[field]=val;
+  render();
+}
+function removeSib(id){
+  D.siblings = D.siblings.filter(s=>s.id!==id);
+  const row = document.querySelector(`.sib-row[data-sibid="${id}"]`);
+  if(row) row.remove();
+  render();
+}
+
+// ========== FORM SECTIONS ==========
+function toggleSection(header){
+  const section = header.closest('.form-section');
+  section.classList.toggle('open');
+}
+
+// ========== LANGUAGE TOGGLE ==========
+function setLang(lang){
+  currentLang = lang;
+  document.querySelectorAll('[data-en],[data-hi]').forEach(el=>{
+    const txt = el.dataset[lang];
+    if(txt) el.textContent = txt;
+  });
+  document.getElementById('btnEn').classList.toggle('active',lang==='en');
+  document.getElementById('btnHi').classList.toggle('active',lang==='hi');
+}
+
+// ========== CLEAR ALL ==========
+function clearAll(){
+  if(!confirm('Clear all form data? This cannot be undone.')) return;
+  document.querySelectorAll('[data-field]').forEach(el=>{
+    if(el.tagName==='SELECT') el.value='';
+    else el.value='';
+  });
+  Object.keys(D).forEach(k=>{
+    if(k==='siblings') D[k]=[];
+    else if(k==='diet') D[k]='Vegetarian';
+    else if(k==='smoke') D[k]='Non-Smoker';
+    else if(k==='drink') D[k]='Teetotaler';
+    else if(k==='invocation') D[k]='ॐ श्री गणेशाय नमः';
+    else D[k]='';
+  });
+  D.photo = null;
+  document.getElementById('sib-list').innerHTML='';
+  document.getElementById('photo-preview-img').style.display='none';
+  document.getElementById('photo-icon').style.display='block';
+  document.getElementById('photo-actions').style.display='none';
+  updateReligion();
+  render();
+  showToast('All fields cleared');
+}
+
+// ========== TOAST ==========
+function showToast(msg){
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'), 3200);
+}
+
+// ========== FAQ ==========
+function toggleFaq(q){
+  q.closest('.faq-item').classList.toggle('open');
+}
+
+// ========== PHOTO & CROP ==========
+let cropImg = new Image();
+let cropOffsetX = 0, cropOffsetY = 0, cropScale = 1;
+let isDragging = false, lastMX = 0, lastMY = 0;
+let lastDist = 0;
+const CROP_R = 130; // radius in canvas pixels
+let originalFile = null;
+
+function handlePhotoUpload(input){
+  if(!input.files||!input.files[0]) return;
+  originalFile = input.files[0];
+  openCropModal(originalFile);
+}
+
+function openCropModal(file){
+  const reader = new FileReader();
+  reader.onload = e => {
+    cropImg = new Image();
+    cropImg.onload = () => {
+      const minScale = Math.max((CROP_R*2)/cropImg.width, (CROP_R*2)/cropImg.height);
+      cropScale = minScale * 1.1;
+      cropOffsetX = 0;
+      cropOffsetY = 0;
+      document.getElementById('crop-zoom').value = cropScale;
+      document.getElementById('crop-zoom').min = minScale * 0.9;
+      document.getElementById('crop-modal').style.display = 'flex';
+      drawCrop();
+    };
+    cropImg.src = e.target.result;
+  };
+  reader.readAsDataURL(file);
+}
+
+function reopenCrop(){
+  if(originalFile) openCropModal(originalFile);
+}
+
+function removePhoto(){
+  D.photo = null;
+  originalFile = null;
+  document.getElementById('photo-preview-img').style.display = 'none';
+  document.getElementById('photo-icon').style.display = 'block';
+  document.getElementById('photo-actions').style.display = 'none';
+  render();
+  showToast('Photo removed');
+}
+
+function closeCropModal(){
+  document.getElementById('crop-modal').style.display = 'none';
+}
+
+function drawCrop(){
+  const canvas = document.getElementById('crop-canvas');
+  const ctx = canvas.getContext('2d');
+  const W = canvas.width, H = canvas.height;
+  const cx = W/2, cy = H/2;
+  ctx.clearRect(0,0,W,H);
+
+  // Draw image
+  const iw = cropImg.width * cropScale;
+  const ih = cropImg.height * cropScale;
+  ctx.drawImage(cropImg, cx + cropOffsetX - iw/2, cy + cropOffsetY - ih/2, iw, ih);
+
+  // Dark overlay with circular hole
+  ctx.save();
+  ctx.fillStyle = 'rgba(0,0,0,0.58)';
+  ctx.beginPath();
+  ctx.rect(0,0,W,H);
+  ctx.arc(cx, cy, CROP_R, 0, Math.PI*2, true);
+  ctx.fill('evenodd');
+  ctx.restore();
+
+  // Circle border
+  ctx.strokeStyle = '#E8B84B';
+  ctx.lineWidth = 2.5;
+  ctx.beginPath();
+  ctx.arc(cx, cy, CROP_R, 0, Math.PI*2);
+  ctx.stroke();
+
+  // Guide text
+  ctx.fillStyle = 'rgba(255,255,255,0.5)';
+  ctx.font = '11px Poppins, sans-serif';
+  ctx.textAlign = 'center';
+  ctx.fillText('Drag to reposition · Scroll to zoom', cx, H - 10);
+}
+
+function applyCrop(){
+  const out = document.createElement('canvas');
+  const sz = CROP_R * 2;
+  out.width = sz; out.height = sz;
+  const ctx = out.getContext('2d');
+  ctx.beginPath();
+  ctx.arc(sz/2, sz/2, sz/2, 0, Math.PI*2);
+  ctx.clip();
+  const iw = cropImg.width * cropScale;
+  const ih = cropImg.height * cropScale;
+  ctx.drawImage(cropImg, sz/2 + cropOffsetX - iw/2, sz/2 + cropOffsetY - ih/2, iw, ih);
+  const url = out.toDataURL('image/jpeg', 0.92);
+  D.photo = url;
+  document.getElementById('photo-preview-img').src = url;
+  document.getElementById('photo-preview-img').style.display = 'block';
+  document.getElementById('photo-icon').style.display = 'none';
+  document.getElementById('photo-actions').style.display = 'flex';
+  closeCropModal();
+  render();
+  showToast('✓ Photo applied!');
+}
+
+function onZoomSlider(val){
+  cropScale = parseFloat(val);
+  drawCrop();
+}
+
+// Mouse events on crop canvas
+(function(){
+  const canvas = document.getElementById('crop-canvas');
+
+  canvas.addEventListener('mousedown', e => {
+    isDragging = true;
+    lastMX = e.clientX; lastMY = e.clientY;
+    e.preventDefault();
+  });
+  window.addEventListener('mousemove', e => {
+    if(!isDragging) return;
+    cropOffsetX += e.clientX - lastMX;
+    cropOffsetY += e.clientY - lastMY;
+    lastMX = e.clientX; lastMY = e.clientY;
+    drawCrop();
+  });
+  window.addEventListener('mouseup', () => isDragging = false);
+
+  canvas.addEventListener('wheel', e => {
+    e.preventDefault();
+    cropScale = Math.max(0.3, Math.min(8, cropScale - e.deltaY * 0.002));
+    document.getElementById('crop-zoom').value = cropScale;
+    drawCrop();
+  }, {passive:false});
+
+  // Touch events
+  canvas.addEventListener('touchstart', e => {
+    e.preventDefault();
+    if(e.touches.length===2){
+      lastDist = Math.hypot(e.touches[0].clientX-e.touches[1].clientX, e.touches[0].clientY-e.touches[1].clientY);
+    } else {
+      isDragging = true;
+      lastMX = e.touches[0].clientX;
+      lastMY = e.touches[0].clientY;
+    }
+  },{passive:false});
+
+  canvas.addEventListener('touchmove', e => {
+    e.preventDefault();
+    if(e.touches.length===2){
+      const dist = Math.hypot(e.touches[0].clientX-e.touches[1].clientX, e.touches[0].clientY-e.touches[1].clientY);
+      cropScale = Math.max(0.3, Math.min(8, cropScale * (dist/lastDist)));
+      lastDist = dist;
+      document.getElementById('crop-zoom').value = cropScale;
+    } else if(isDragging){
+      cropOffsetX += e.touches[0].clientX - lastMX;
+      cropOffsetY += e.touches[0].clientY - lastMY;
+      lastMX = e.touches[0].clientX;
+      lastMY = e.touches[0].clientY;
+    }
+    drawCrop();
+  },{passive:false});
+
+  canvas.addEventListener('touchend', () => isDragging = false);
+})();
+
+// ========== DOWNLOAD PDF ==========
+async function downloadPDF(){
+  const btn = document.getElementById('btn-pdf');
+  btn.classList.add('busy');
+  btn.textContent = '⏳ Generating...';
+  try{
+    const card = document.getElementById('biodata-card');
+    const origTransform = card.style.transform;
+    const origWidth = card.style.width;
+    card.style.transform = 'scale(1)';
+    card.style.width = '595px';
+    document.getElementById('biodata-scaler').style.height = card.scrollHeight+'px';
+    await new Promise(r=>setTimeout(r,80));
+
+    const canvas = await html2canvas(card, {scale:2,useCORS:true,allowTaint:true,backgroundColor:'#ffffff',logging:false});
+    const {jsPDF} = window.jspdf;
+    const pdf = new jsPDF({unit:'px',format:'a4',orientation:'portrait'});
+    const pdfW = pdf.internal.pageSize.getWidth();
+    const pdfH = pdf.internal.pageSize.getHeight();
+    const imgRatio = canvas.height/canvas.width;
+    const imgH = pdfW * imgRatio;
+
+    if(imgH <= pdfH){
+      pdf.addImage(canvas.toDataURL('image/jpeg',0.95),'JPEG',0,0,pdfW,imgH);
+    } else {
+      let yPos = 0;
+      let srcY = 0;
+      const pageH = canvas.width * (pdfH/pdfW);
+      while(srcY < canvas.height){
+        const sliceH = Math.min(pageH, canvas.height-srcY);
+        const slice = document.createElement('canvas');
+        slice.width = canvas.width; slice.height = sliceH;
+        slice.getContext('2d').drawImage(canvas,0,srcY,canvas.width,sliceH,0,0,canvas.width,sliceH);
+        if(yPos>0) pdf.addPage();
+        pdf.addImage(slice.toDataURL('image/jpeg',0.95),'JPEG',0,0,pdfW,sliceH*(pdfW/canvas.width));
+        srcY+=sliceH; yPos++;
+      }
+    }
+
+    const fname = (D.name||'Biodata').replace(/\s+/g,'_')+'_VivahBiodata.pdf';
+    pdf.save(fname);
+    showToast('✓ PDF downloaded!');
+    card.style.transform = origTransform;
+    card.style.width = origWidth;
+    scaleCard();
+  } catch(e){
+    showToast('Error generating PDF. Try again.');
+    console.error(e);
+  }
+  btn.classList.remove('busy');
+  btn.innerHTML='<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/></svg> Download PDF (High Quality)';
+}
+
+// ========== DOWNLOAD PNG ==========
+async function downloadPNG(){
+  const btn = document.getElementById('btn-png');
+  btn.classList.add('busy');
+  btn.textContent = '⏳ Generating...';
+  try{
+    const card = document.getElementById('biodata-card');
+    const origTransform = card.style.transform;
+    card.style.transform = 'scale(1)';
+    card.style.width = '595px';
+    document.getElementById('biodata-scaler').style.height = card.scrollHeight+'px';
+    await new Promise(r=>setTimeout(r,80));
+    const canvas = await html2canvas(card, {scale:2,useCORS:true,allowTaint:true,backgroundColor:'#ffffff',logging:false});
+    const a = document.createElement('a');
+    a.download = (D.name||'Biodata').replace(/\s+/g,'_')+'_VivahBiodata.png';
+    a.href = canvas.toDataURL('image/png');
+    a.click();
+    showToast('✓ PNG downloaded!');
+    card.style.transform = origTransform;
+    scaleCard();
+  } catch(e){
+    showToast('Error. Try again.');
+    console.error(e);
+  }
+  btn.classList.remove('busy');
+  btn.innerHTML='<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21,15 16,10 5,21"/></svg> Download as PNG Image';
+}
+
+// ========== INIT ==========
+window.addEventListener('load', ()=>{
+  scaleCard();
+  render();
+
+  // Auto-highlight correct pill
+  document.querySelectorAll('.tpl-pill').forEach(p=>{
+    p.addEventListener('click', function(){
+      document.querySelectorAll('.tpl-pill').forEach(pp=>pp.classList.remove('active'));
+      this.classList.add('active');
+    });
+  });
+});
+</script>
+</body>
+</html>
